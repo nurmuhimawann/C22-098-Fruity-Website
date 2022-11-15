@@ -134,6 +134,185 @@ body {
     margin-right: 10px;
 }
 
+
+/* About Us Section */
+.about-us {
+    padding: 3rem 0;
+}
+
+.text-left>.section-title-about,
+.text-left>.section-sub-title {
+    margin-left: 35px;
+}
+
+.section-title-about {
+    color: rgba(16, 33, 34, 1);
+    opacity: 0.25;
+    font-size: 28px;
+    font-style: Bold;
+    font-weight: 700;
+}
+
+.section-sub-title {
+    line-height: 1.5;
+}
+
+.vertical-line {
+    width: 20rem;
+    height: 4px;
+    background-color: #F8B63C;
+    border-radius: 3px;
+    margin-bottom: 26px;
+}
+
+.text-about>p {
+    font-size: 18px;
+    color: #102123;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.learn-more>i {
+    color: #F8B63C;
+}
+
+.text-learn-more {
+    color: #F8B63C;
+    height: auto;
+    font-weight: 600;
+    text-decoration-thickness: 2px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.text-learn-more:hover,
+.text-learn-more:hover+.bi-arrow-up-right {
+    color: #57AC49;
+}
+
+.image-section {
+    float: right;
+    margin-right: -20px;
+}
+
+.image-section>img {
+    border-radius: 12px 0 0 12px;
+    filter: brightness(0.88);
+}
+
+.bg-mask {
+    position: absolute;
+    top: 18rem;
+    right: -22rem;
+    z-index: 1;
+}
+
+/* start wrapper */
+.wrapper {
+    float: left;
+    margin-left: -4rem;
+    margin-top: 7rem;
+}
+
+.side-content {
+    display: flex;
+    position: relative;
+}
+
+.why {
+    color: rgba(16, 33, 34, 1);
+    opacity: 0.80;
+    margin-left: 100px;
+    font-size: 28px;
+    font-style: Bold;
+    font-weight: 700;
+}
+
+.rectangle-primary {
+    background-color: #57AC49;
+    top: 60px;
+    left: 47px;
+    width: 750px;
+    height: 140px;
+    position: absolute;
+}
+
+.rectangle-secondary {
+    background-color: #7BC270;
+    top: 210px;
+    left: 47px;
+    width: 750px;
+    height: 17px;
+    position: absolute;
+}
+
+.ellips-left {
+    position: absolute;
+    background-color: #F8B63C;
+    top: 35px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.ellips-right {
+    background-color: #F8B63C;
+    border-radius: 100% 0 0 0;
+    top: 187px;
+    left: 757px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.group-text {
+    top: 92px;
+    left: 115px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.text-item {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+}
+
+.text-head {
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-style: SemiBold;
+    font-weight: 600;
+}
+
+.text-sub-head {
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.text-item>.one {
+    width: 140px;
+}
+
+.text-item>.two {
+    width: 160px;
+}
+
+.text-item>.three {
+    width: 180px;
+}
+
+/* end wrapper About us */
+
+
 /* Back to Top */
 ion-icon {
     display: block;
