@@ -459,6 +459,142 @@ body {
 }
 
 
+/* Footer Section */
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.links {
+    display: flex;
+}
+
+.logo-socmed {
+    display: flex;
+    margin-right: 150px;
+    flex-direction: column;
+}
+
+.logo-socmed>img {
+    margin-bottom: 24px;
+    width: 150px;
+}
+
+.social-links>a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgb(221, 221, 221);
+    line-height: 1;
+    padding: 10px 0;
+    margin-right: 12px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social-links>a>i {
+    color: #254C50;
+}
+
+.social-links a:hover {
+    background: #57AC49;
+}
+
+.social-links a:hover>i {
+    color: #fff;
+}
+
+.useful-links {
+    display: flex;
+    position: relative;
+}
+
+.website {
+    display: flex;
+    margin-right: 100px;
+    flex-direction: column;
+}
+
+.more {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.website>span,
+.more>span {
+    color: rgba(37, 76, 80, 1);
+    font-size: 20px;
+    font-style: Medium;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.web-links,
+.more-links {
+    display: flex;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+}
+
+.web-links>a,
+.more-links>a {
+    color: rgba(37, 76, 80, 1);
+    margin-bottom: 16px;
+    height: auto;
+    opacity: 0.80;
+    font-size: 16px;
+    font-style: Regular;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.web-links>a:hover,
+.more-links>a:hover {
+    color: #57AC49;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.send-mail,
+.github {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.send-mail>i,
+.github>i {
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+}
+
+.send-mail>span,
+.github>span {
+    color: rgba(37, 76, 80, 1);
+    padding-top: 4px;
+    height: auto;
+    font-size: 16px;
+    font-style: Regular;
+    font-weight: 400;
+}
+
+.copyright {
+    color: rgba(37, 76, 80, 1);
+    margin-top: 5rem;
+    font-size: 20px;
+    font-style: SemiBold;
+    text-align: center;
+    font-weight: 600;
+}
+
 /* Back to Top */
 ion-icon {
     display: block;
