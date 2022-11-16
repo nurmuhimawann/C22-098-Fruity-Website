@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow: auto;
-    height: 3000px;
 }
 
 .navbar.active {
@@ -137,7 +136,7 @@ body {
 
 /* About Us Section */
 .about-us {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 .text-left>.section-title-about,
