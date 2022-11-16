@@ -312,6 +312,83 @@ body {
 
 /* end wrapper About us */
 
+/* Service Section */
+.services {
+    padding: 3rem 0;
+    position: relative;
+}
+
+.section-title {
+    color: rgba(16, 33, 34, 1);
+    opacity: 0.25;
+    font-size: 20px;
+    font-style: Bold;
+    font-weight: 700;
+}
+
+.section-sub-title {
+    color: #254C50;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.card img {
+    width: 100%;
+    filter: brightness(0.9);
+}
+
+.card-body {
+    color: rgb(255, 255, 255);
+    background-color: #57AC49;
+    height: auto;
+    padding: 10px;
+}
+
+.card-info {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(27, 25, 25, 0.55);
+    padding: 1rem;
+    backdrop-filter: blur(1rem);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover .card-info {
+    transform: translateY(0);
+}
+
+.services>.circle-left {
+    position: absolute;
+    top: 50px;
+    left: -18rem;
+}
+
+.services>.circle-left>img {
+    width: 70%;
+}
+
+.services>.circle-right {
+    position: absolute;
+    top: 50px;
+    right: -18rem;
+    z-index: 1;
+}
+
+.services>.circle-right>img {
+    width: 75%;
+}
+
 
 /* Back to Top */
 ion-icon {
