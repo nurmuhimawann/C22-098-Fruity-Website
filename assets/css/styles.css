@@ -389,6 +389,27 @@ body {
     width: 75%;
 }
 
+/* How it Works Sections */
+.how-it-works {
+    padding: 3rem 0;
+}
+
+.content {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.content-img>img {
+    width: 300px;
+    height: 320px;
+    margin: 10px 5px;
+    border-radius: 12px;
+    filter: brightness(0.9);
+}
+
 
 /* Back to Top */
 ion-icon {
