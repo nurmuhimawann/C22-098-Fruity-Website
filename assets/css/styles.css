@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Avture;
+    src: url(../fonts/avture/Avture.otf);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow: auto;
@@ -79,8 +84,6 @@ body {
     font-style: Regular;
     font-family: Avture;
     font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
 }
 
 .traced {
