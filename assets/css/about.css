@@ -1,0 +1,214 @@
+body {
+    position: relative;
+}
+
+/* jumbotron section */
+.about-fruity {
+    background-color: #57AC49;
+    display: flex;
+    margin: 0 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 80px;
+}
+
+.about-fruity .container {
+    margin: 150px auto 0px;
+}
+
+.fruity-image>img {
+    width: 100%;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+
+.content-text>.title {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.content-text>.title>h1 {
+    color:#FBFBFB;
+    font-size: 60px;
+    font-style: SemiBold;
+    font-weight: 600;
+}
+
+.text-sub {
+    width: 90%;
+}
+
+.content-text>.text-sub>p {
+    color: rgba(255, 255, 255, .9);
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+
+/* Teams Section */
+.teams {
+    padding: 7rem 0;
+    /* position: relative; */
+}
+
+.teams>.container>.card-list {
+    position: relative;
+    display: flex;
+
+}
+
+.card-list>.card-profile {
+    position: relative;
+    /* margin: 50px auto; */
+    margin-right: 200px;
+}
+
+
+.background-card {
+    top: 0px;
+    left: 3px;
+    width: 348px;
+    height: 464px;
+    position: absolute;
+    border: 1px solid #57ac49;
+    border-radius: 50px;
+}
+
+.rect-bottom {
+    top: 410px;
+    left: 0px;
+    width: 355px;
+    height: 55px;
+    position: absolute;
+}
+
+.profile-picture {
+    top: 10px;
+    left: 80px;
+    width: 195px;
+    height: 195px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.picture {
+    top: 33px;
+    left: 30px;
+    width: 129px;
+    height: 129px;
+    position: absolute;
+    box-sizing: content-box;
+    border: 2px solid rgba(111, 252, 88, 1);
+    border-radius: 100px;
+}
+
+.pict-ellipse {
+    top: 26px;
+    right: 10px;
+    width: 140px;
+    height: 148px;
+    position: absolute;
+}
+
+.body-info {
+    top: 196px;
+    left: 3px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 348px;
+}
+
+.body-info>h3 {
+    color: rgba(37, 37, 37, 1);
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.body-info>.roles {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.body-info>.desc {
+    color: rgba(37, 37, 37, 1);
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.mail-box {
+    top: 330px;
+    left: 90px;
+    width: 180px;
+    padding: 5px 20px;
+    position: absolute;
+    align-items: center;
+    border: 2px solid rgba(87, 172, 73, 1);
+    border-radius: 10px;
+    background-color: rgba(87, 172, 73, 1);
+}
+
+.mail-box>p {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+.socmed-icons {
+    top: 384px;
+    left: 38px;
+    width: 279px;
+    height: 38px;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+}
+
+.colors {
+    color: rgba(87, 172, 73, 1);
+    width: 48px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 3rem;
+    background-color: #57AC49;
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}

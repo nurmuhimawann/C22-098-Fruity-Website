@@ -65,7 +65,6 @@ body {
     height: auto;
     display: flex;
     position: relative;
-    align-items: flex-start;
     flex-direction: column;
     margin-top: -50px;
 }
@@ -95,7 +94,6 @@ body {
 .text-sub {
     width: 600px;
     display: flex;
-    position: relative;
     flex-direction: column;
 }
 
