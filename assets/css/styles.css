@@ -1,3 +1,4 @@
+/* Font */
 @font-face {
     font-family: Avture;
     src: url(../fonts/avture/Avture.otf);
@@ -8,10 +9,12 @@ body {
     overflow: auto;
 }
 
+/* Custom CSS */
+
+/* Navbar Section */
 .navbar.active {
     background-color: #57AC49;
     box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.05);
-    ;
 }
 
 .navbar.navbar-anim {
@@ -88,7 +91,6 @@ body {
 .traced {
     width: 350px;
     height: 40px;
-    position: relative;
 }
 
 .text-sub {
@@ -98,9 +100,8 @@ body {
 }
 
 .text-text05 {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
     height: auto;
-    opacity: 0.90;
     font-size: 20px;
     line-height: 34px;
     margin-bottom: 30px;
@@ -320,8 +321,8 @@ body {
 .text-item>.three {
     width: 180px;
 }
-
 /* end wrapper About us */
+
 
 /* Service Section */
 .services {

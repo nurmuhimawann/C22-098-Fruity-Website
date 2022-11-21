@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruity</title>
 
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+
     <!-- Bootstrap v.5.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -30,7 +35,7 @@
 
 <body>
     <!-- Navbar Section Begin -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" data-header>
         <div class="container">
             <h1 class="navbar-brand fs-2 fw-bold my-auto" href="#">Fruity.</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -41,7 +46,7 @@
                 <ul class="navbar-nav me-auto mx-4 px-4 my-2 my-lg-0 navbar-nav-scroll"
                     style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-us">About Us</a>
@@ -59,9 +64,9 @@
     </nav>
     <!-- Navbar End -->
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <!-- Hero Section Begin -->
-        <section class="jumbotron">
+        <section class="jumbotron" id="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -144,7 +149,7 @@
                             <img src="assets/img/grading fruit (2).png" alt="">
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="bg-mask mt-5">
                 <img src="assets/img/Ellipse 136 (1).png" alt="">
@@ -163,7 +168,7 @@
                 </div>
                 <div class="row justify-content-center mt-5" style="overflow: hidden;">
                     <div class="col-lg-4">
-                        <a class="text-decoration-none" href="#">
+                        <a class="text-decoration-none" href="fresh-rotten.html">
                             <div class="card border-0 rounded-0">
                                 <img src="assets/img/agricultora-asiatica-trabajando-temprano-granja-sosteniendo-cesta-madera-verduras-frescas-tabletas_533878-570.png"
                                     class="card-img-top" alt="Orang menganalisis Buah">
@@ -388,10 +393,13 @@
                 <div class="logo-socmed">
                     <img src="assets/img/favicon.png" alt="TSSecondLOGOTEXTFINISH23628" />
                     <div class="social-links mt-2">
-                        <a href="https://www.instagram.com/dicoding/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/dicoding/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
                         <a href="https://twitter.com/dicoding/" target="_blank"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.linkedin.com/company/dicoding/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.youtube.com/c/DicodingIndonesia" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/dicoding/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.youtube.com/c/DicodingIndonesia" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
                     </div>
                 </div>
                 <div class="useful-links">
@@ -419,12 +427,14 @@
                 </div>
                 <div class="github">
                     <i class="bi bi-github"></i>
-                    <a href="https://github.com/nurmuhimawann/C22-098-Fruity-Website" target="_blank"><span>Project Repository</span></a>
+                    <a href="https://github.com/nurmuhimawann/C22-098-Fruity-Website" target="_blank"><span>Project
+                            Repository</span></a>
                 </div>
             </div>
         </div>
         <div class="copyright mb-4">Copyright &copy;
-            <script>document.write(new Date().getFullYear())</script> Fruity by C22-098</div>
+            <script>document.write(new Date().getFullYear())</script> Fruity by C22-098
+        </div>
     </footer>
     <!-- End Footer -->
 
