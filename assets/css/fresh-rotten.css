@@ -16,13 +16,14 @@ body {
 
 .title>h3 {
     color: #254C50;
+    font-size: 26px;
 }
 
 .title>img {
     margin: 0 auto;
 }
 
-.input-group {
+form>.input-group {
     border: 1px solid rgb(206, 212, 218);
     border-radius: 0.25rem;
 }
@@ -38,12 +39,7 @@ body {
     transform: translateY(-50%);
 }
 
-.input-group-append label {
-    background-color: rgb(226, 230, 234);
-    border-color: rgb(218, 224, 229);
-}
-
-.input-group-append label:hover {
+.input-group-append>label {
     background-color: rgb(226, 230, 234);
     border-color: rgb(218, 224, 229);
 }
@@ -52,27 +48,27 @@ body {
     margin-right: 10px;
 }
 
-.image-area {
+form>.image-area {
     position: relative;
-    border: 2px dashed rgba(27, 25, 25, 0.75);
+    border: 2px dashed rgba(27, 25, 25, 0.7);
     border-radius: 0.25rem;
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
-.image-area::before {
+form>.image-area::before {
     content: 'Uploaded Image Result';
-    color: rgb(27, 25, 25);
+    color: rgba(27, 25, 25, 0.8);
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     z-index: 1;
 }
 
-.image-area img {
+form>.image-area>img {
     position: relative;
     z-index: 2;
 }
@@ -95,7 +91,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 3rem;
+    height: 4rem;
     background-color: #57AC49;
     display: flex;
 }

@@ -1,0 +1,62 @@
+body {
+    position: relative;
+}
+
+/* Navbar Section */
+.navbar {
+    background-color: #57AC49;
+}
+
+/* Predict Fruits Section */
+.predicted-fresh-rotten {
+    padding: 3rem 0 13rem 0;
+    min-height: 100vh;
+    background-color: rgb(246, 250, 247);
+}
+
+.title-predict {
+    color: #254C50;
+    font-size: 26px;
+}
+
+.predicted-result {
+    padding: 0.8rem;
+    border: 2px dashed rgba(27, 25, 25, 0.55);
+    border-radius: 0.25rem;
+}
+
+.predicted-result>p{
+    color: rgba(0, 0, 0, .7);
+}
+
+.predicted-fresh-rotten button {
+    width: 100%;
+    font-weight: 500;
+    border-color: #7BC270;
+    background-color: #7BC270;
+}
+
+.predicted-fresh-rotten button:hover {
+    border-color: #57AC49;
+    background-color: #57AC49;
+}
+
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: #57AC49;
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}

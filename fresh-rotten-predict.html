@@ -31,7 +31,7 @@
 
     <!-- Styles CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/fresh-rotten.css">
+    <link rel="stylesheet" href="assets/css/fresh-rotten-predict.css">
 </head>
 
 <body>
@@ -66,43 +66,29 @@
     <!-- Navbar End -->
 
     <main>
-        <!-- Predict Section Begin -->
-        <section class="fresh-rotten">
+        <!-- Predict Result Section Begin -->
+        <div class="predicted-fresh-rotten">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="title text-center mb-5">
-                            <h3 class="fw-bold mb-5">Fresh Fruit Identification</h3>
-                            <img src="assets/img/gallery-image.svg" alt="image" width="150">
-                        </div>
+                    <div class="col-lg-12 text-center mb-5">
+                        <h3 class="title-predict fw-bold">Fresh Fruit Identification</h3>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 mx-auto">
-                        <form action="fresh-rotten-predict.html" method="POST" enctype="multipart/form-data">
-                            <div class="input-group bg-white mb-4 p-2">
-                                <input onchange="readURL(this);" name="file" type="file" id="upload"
-                                    class="form-control">
-                                <label id="upload-label" class="fw-normal text-muted">Choose File</label>
-                                <div class="input-group-append">
-                                    <label for="upload" class="btn btn-light"><i
-                                            class="fas fa-cloud-upload-alt text-muted"></i><small
-                                            class="text-uppercase fw-normal text-muted">Choose File</small></label>
-                                </div>
-                            </div>
-                            <p class="fst-italic text-center">The image uploaded will be rendered inside the box below.
-                            </p>
-                            <div class="image-area bg-white my-4"><img id="imageResult" src="" alt=""
-                                    class="img-fluid rounded shadow-sm mx-auto d-block"></div>
-                            <button type="submit" class="btn btn-dark">Identification</button>
-                        </form>
+                    <div class="col-lg-6">
+                        <div class="predicted-result bg-white text-center mb-4">
+                            <p class="fs-5 mb-0">This Fruit is <span class="fw-bold">Fresh Apple</span>.</p>
+                        </div>
+                        <a class="text-decoration-none" href="fresh-rotten.html">
+                            <button type="button" class="btn btn-dark">Back</button>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Predict End -->
-
+        </div>
+        <!-- Predict Result End -->
     </main>
+
     <!-- Footer Section Begin -->
     <footer class="footer text-white">
         <div class="container">
