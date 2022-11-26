@@ -1,0 +1,224 @@
+body {
+    position: relative;
+}
+
+/* Hero Section */
+.about-fruity {
+    background-color: #57AC49;
+    display: flex;
+    margin: 0 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 80px;
+}
+
+.about-fruity>.container {
+    margin: 150px auto 0px;
+}
+
+.fruity-image>img {
+    width: 100%;
+}
+
+.about-fruity>.container>.row>.content-text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+
+.content-text>.title {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.content-text>.title>h1 {
+    color: #FBFBFB;
+    font-size: 50px;
+}
+
+.content-text>.title>img {
+    width: 350px;
+    height: 40px;
+}
+
+.content-text>p {
+    width: 90%;
+    color: rgba(255, 255, 255, .9);
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+
+/* Teams Section */
+.teams {
+    padding: 7rem 0;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 3rem;
+    justify-content: space-evenly;
+
+}
+
+.card-items {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    margin: 0 15px;
+    background-color: #FFF;
+    border: 1px solid #57ac49;
+    border-radius: 50px 50px 30px 30px;
+    transition: all 0.3s ease-out;
+}
+
+.rect-bottom {
+    top: 345px;
+    left: -2px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+}
+
+.profile-picture {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.line-pict {
+    border-radius: 50%;
+    width: 113px;
+    height: 113px;
+    display: inline-block;
+    background-color: transparent;
+    border-top: 4px solid #7BC270;
+    border-left: 4px solid transparent;
+    border-right: 4px solid #7BC270;
+    border-bottom: 4px solid #7BC270;
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    border: 2px solid rgba(111, 252, 88, 1);
+    border-radius: 100px;
+}
+
+.pict-ellipse {
+    top: -45px;
+    right: -25px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+
+.card-information {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.card-information>h3 {
+    color: rgba(37, 37, 37, 1);
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-information>.roles {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card-information>.desc {
+    color: rgba(37, 37, 37, 1);
+    width: 90%;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.mail-box {
+    padding: 4px 20px;
+    margin: 0 auto;
+    align-items: center;
+    border: 2px solid rgba(87, 172, 73, 1);
+    border-radius: 10px;
+    background-color: rgba(87, 172, 73, 1);
+}
+
+.mail-box>p {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.socmed-icons {
+    position: relative;
+    width: 80%;
+    margin: 2px auto;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 99;
+}
+
+.socmed-icons>a>i {
+    color: rgba(87, 172, 73, 1);
+    width: 48px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.socmed-icons>a>:hover {
+    color: #7BC270;
+}
+
+.card-items:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px rgba(184, 249, 211, 0.48);
+}
+
+.card-items:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+        0 15px 24px rgba(184, 249, 211, 0.48);
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: #57AC49;
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}

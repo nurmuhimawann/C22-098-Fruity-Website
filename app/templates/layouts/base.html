@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Favicons -->
+    {% include 'includes/favicons.html' %}
+
+    {% include 'includes/stylesheet.html' %}
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+    <!-- Navbar Section Start -->
+    {% include 'includes/navigation.html' %}
+    <!-- Navbar Section End -->
+
+    <!-- Content Section Start -->
+    {% block content %}{% endblock %}
+    <!-- Content Section End -->
+
+    <!-- Footer Section Start -->
+    {% block footer %}{% endblock %}
+    <!-- Footer Section End -->
+
+    <!-- Back to Top Start -->
+    {% include 'includes/back-top.html' %}
+    <!-- Back to Top End -->
+
+    <!-- Javacript Library -->
+    {% include 'includes/scripts.html' %}
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

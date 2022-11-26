@@ -1,0 +1,105 @@
+body {
+    position: relative;
+}
+
+/* Navbar Section */
+.navbar {
+    background-color: #57AC49;
+}
+
+/* Fresh Rotten Section */
+.fresh-rotten {
+    background-color: #f6faf7;
+    padding: 3rem 0 13rem 0;
+    min-height: 100vh;
+}
+
+.title>h3 {
+    color: #254C50;
+    font-size: 26px;
+}
+
+.title>img {
+    margin: 0 auto;
+}
+
+form>.input-group {
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 0.25rem;
+}
+
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.input-group-append>label {
+    background-color: rgb(226, 230, 234);
+    border-color: rgb(218, 224, 229);
+}
+
+.input-group-append i {
+    margin-right: 10px;
+}
+
+form>.image-area {
+    position: relative;
+    border: 2px dashed rgba(27, 25, 25, 0.7);
+    border-radius: 0.25rem;
+    padding: 1.1rem;
+}
+
+form>.image-area::before {
+    content: 'Uploaded Image Result';
+    color: rgba(27, 25, 25, 0.8);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.85rem;
+    z-index: 1;
+}
+
+form>.image-area>img {
+    position: relative;
+    z-index: 2;
+}
+
+.fresh-rotten button {
+    width: 100%;
+    background-color: #7BC270;
+    border: #7BC270;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fresh-rotten button:hover {
+    background-color: #57AC49;
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: #57AC49;
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}
