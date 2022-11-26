@@ -9,19 +9,19 @@
             <ul class="navbar-nav me-auto mx-4 px-4 my-2 my-lg-0 navbar-nav-scroll"
                 style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}#hero">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-us">About Us</a>
+                    <a class="nav-link" href="{{ url_for('index') }}#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="fresh-rotten.html">Services</a>
+                    <a class="nav-link" href="{{ url_for('fresh_rotten') }}">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
+                    <a class="nav-link" href="{{ url_for('index') }}#faq">FAQ</a>
                 </li>
             </ul>
-            <a class="btn btn-outline-warning" href="about.html" role="button">Contact Us</a>
+            <a class="btn btn-outline-warning" href="{{ url_for('about') }}" role="button">Contact Us</a>
         </div>
     </div>
 </nav>

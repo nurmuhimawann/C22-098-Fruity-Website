@@ -1,268 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layouts/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruity</title>
+{% block title %}Fruity{% endblock %}
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
 
-    <!-- Bootstrap v.5.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Styles CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-</head>
-
-<body>
-    <!-- Navbar Section Begin -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" data-header>
-        <div class="container">
-            <h1 class="navbar-brand fs-2 fw-bold my-auto" href="#">Fruity.</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto mx-4 px-4 my-2 my-lg-0 navbar-nav-scroll"
-                    style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fresh-rotten.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#faq">FAQ</a>
-                    </li>
-                </ul>
-                <a class="btn btn-outline-warning" href="#" role="button">Contact Us</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar Section End -->
-
-    <main>
-        <!-- Hero Section Begin -->
-        <section class="about-fruity">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <figure class="fruity-image">
-                            <img src="assets/img/fruity-logo.png" alt="fruity-logo">
-                        </figure>
-                    </div>
-                    <div class="col-lg-8 content-text">
-                        <div class="title">
-                            <h1 class="fw-semibold">About Fruity</h1>
-                            <img src="assets/img/traced.png" alt="traced-line" />
-                        </div>
-                        <p> Healthy Lifestyle isn’t a dream now, because we will help you to identify rotten
-                            fruit fast, so you get fresh fruit that is certainly safe for consumption. Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Hero Section End -->
-
-        <!-- Teams Section Begin -->
-        <section id="teams" class="teams">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 text-center m-auto">
-                        <span class="section-title">Contact Us</span>
-                        <h2 class="fw-bold section-sub-title mt-2">Our Amazing Teams</h2>
-                        <p class="mt-3">These people work on making Fruity better<br>
-                            If you have any questions? you can call one of us or <br>email us at
-                            <span class="fw-bold">muhammad.himawan73@gmail.com</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card-list mt-5 mb-5">
-                    <div class="card-items">
-                        <div class="profile-picture mb-3">
-                            <picture class="line-pict">
-                                <img src="assets/img/team/mawan.png" alt="Mawan" class="picture" />
-                            </picture>
-                        </div>
-                        <div class="card-information">
-                            <h3>Nur Muhammad Himawan</h3>
-                            <span class="roles">Team Leader</span>
-                            <p class="desc">
-                                A kiddo who love to playing around with the design via
-                                Illustrator & Photoshop.
-                            </p>
-                        </div>
-                        <div class="mail-box mb-3">
-                            <p>mawann@gmail.com</p>
-                        </div>
-                        <div class="socmed-icons">
-                            <a href="https://twitter.com/nurmuhimawann/" target="_blank"><i
-                                    class="bi bi-twitter"></i></a>
-                            <a href="https://www.instagram.com/mawann_/" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/nurmuhimawann/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/nurmuhimawann/" target="_blank"><i class="bi bi-github"></i></a>
-                        </div>
-                        <img src="assets/img/rectangle-bottom.svg" alt="rectangle" class="rect-bottom" />
-                    </div>
-
-                    <div class="card-items">
-                        <div class="profile-picture mb-3">
-                            <picture class="line-pict">
-                                <img src="assets/img/team/ilman.jpeg" alt="Kak Ilman"
-                                    class="picture" />
-                            </picture>
-                        </div>
-                        <div class="card-information">
-                            <h3>Mohamad Ilman Huda</h3>
-                            <span class="roles">Front-End Developer</span>
-                            <p class="desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto,
-                                sint distinctio.
-                            </p>
-                        </div>
-                        <div class="mail-box mb-3">
-                            <p>siapaajah256@gmail.com</p>
-                        </div>
-                        <div class="socmed-icons">
-                            <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.instagram.com/ilman_hudaa/ " target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/mohamad-ilman-huda/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/hudilman" target="_blank"><i class="bi bi-github"></i></a>
-                        </div>
-                        <img src="assets/img/rectangle-bottom.svg" alt="rectangle" class="rect-bottom" />
-                    </div>
-
-                    <div class="card-items">
-                        <div class="profile-picture mb-3">
-                            <picture class="line-pict">
-                                <img src="assets/img/team/putri.jpg" alt="Kak Putri" class="picture" />
-                            </picture>
-                        </div>
-                        <div class="card-information">
-                            <h3>Putri Nur Aini Mahfudz</h3>
-                            <span class="roles">Machine Learning Developer</span>
-                            <p class="desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto,
-                                sint.
-                            </p>
-                        </div>
-                        <div class="mail-box mb-3">
-                            <p>putrinura787@gmail.com</p>
-                        </div>
-                        <div class="socmed-icons">
-                            <a href="https://twitter.com/putrinamahfudz/" target="_blank"><i
-                                    class="bi bi-twitter"></i></a>
-                            <a href="https://www.instagram.com/putrinamahfudz/" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/putrinamahfudz/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/putrinamahfudz/" target="_blank"><i
-                                    class="bi bi-github"></i></a>
-                        </div>
-                        <img src="assets/img/rectangle-bottom.svg" alt="rectangle" class="rect-bottom" />
-                    </div>
-
-                    <div class="card-items">
-                        <div class="profile-picture mb-3">
-                            <picture class="line-pict">
-                                <img src="assets/img/team/laily.jpeg" alt="Kak Laily" class="picture" />
-                            </picture>
-                        </div>
-                        <div class="card-information">
-                            <h3>Laily Farkhah Adhimah</h3>
-                            <span class="roles">Machine Learning Developer</span>
-                            <p class="desc">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto,
-                                sint.
-                            </p>
-                        </div>
-                        <div class="mail-box mb-3">
-                            <p>lailyfarkhaha@gmail.com</p>
-                        </div>
-                        <div class="socmed-icons">
-                            <a href="https://twitter.com/dariLailyfa_/" target="_blank"><i
-                                    class="bi bi-twitter"></i></a>
-                            <a href="https://www.instagram.com/laily_adhimah/" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/laily-farkhah-adhimah-13b953257/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/Lailyadhimah/" target="_blank"><i class="bi bi-github"></i></a>
-                        </div>
-                        <img src="assets/img/rectangle-bottom.svg" alt="rectangle" class="rect-bottom" />
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Teams Section End -->
-    </main>
-
-    <!-- Footer Section Begin -->
-    <footer class="footer text-white">
+{% block content %}
+<main>
+    <!-- Hero Section Begin -->
+    <section class="about-fruity">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="footer-content fw-semibold">
-                        <p>Copyright &copy;
-                            <script>document.write(new Date().getFullYear())</script> Fruity by C22-098
-                        </p>
+                <div class="col-lg-4">
+                    <figure class="fruity-image">
+                        <img src="{{ url_for('static', filename='img/fruity-logo.png') }}" alt="fruity-logo">
+                    </figure>
+                </div>
+                <div class="col-lg-8 content-text">
+                    <div class="title">
+                        <h1 class="fw-semibold">About Fruity</h1>
+                        <img src="{{ url_for('static', filename='img/traced.png') }}" alt="traced-line" />
                     </div>
+                    <p> Healthy Lifestyle isn’t a dream now, because we will help you to identify rotten
+                        fruit fast, so you get fresh fruit that is certainly safe for consumption. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer End -->
+    </section>
+    <!-- Hero Section End -->
 
-    <!-- Back to Top -->
-    <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
-        <ion-icon name="arrow-up"></ion-icon>
-    </a>
+    <!-- Teams Section Begin -->
+    <section id="teams" class="teams">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 text-center m-auto">
+                    <span class="section-title">Contact Us</span>
+                    <h2 class="fw-bold section-sub-title mt-2">Our Amazing Teams</h2>
+                    <p class="mt-3">These people work on making Fruity better<br>
+                        If you have any questions? you can call one of us or <br>email us at
+                        <span class="fw-bold">muhammad.himawan73@gmail.com</span>
+                    </p>
+                </div>
+            </div>
 
-    <!-- Javacript -->
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <!-- Ion Icon Script -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- script.JS -->
-    <script src="assets/js/script.js" defer></script>
-</body>
+            <div class="card-list mt-5 mb-5">
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/mawan.png') }}" alt="Mawan" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Nur Muhammad Himawan</h3>
+                        <span class="roles">Team Leader</span>
+                        <p class="desc">
+                            A kiddo who love to playing around with the design via
+                            Illustrator & Photoshop.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>muhammad.himawan73@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://twitter.com/nurmuhimawann/" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/mawann_/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nurmuhimawann/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/nurmuhimawann/" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
 
-</html>
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/ilman.jpeg') }}" alt="Kak Ilman"
+                                class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Mohamad Ilman Huda</h3>
+                        <span class="roles">Front-End Developer</span>
+                        <p class="desc">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto,
+                            sint distinctio.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>siapaajah256@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/ilman_hudaa/ " target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamad-ilman-huda/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/hudilman" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/putri.jpg') }}" alt="Kak Putri" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Putri Nur Aini Mahfudz</h3>
+                        <span class="roles">Machine Learning Developer</span>
+                        <p class="desc">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto,
+                            sint.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>putrinura787@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://twitter.com/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/laily.jpeg') }}" alt="Kak Laily" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Laily Farkhah Adhimah</h3>
+                        <span class="roles">Machine Learning Developer</span>
+                        <p class="desc">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto,
+                            sint.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>lailyfarkhaha@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://twitter.com/dariLailyfa_/" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/laily_adhimah/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/laily-farkhah-adhimah-13b953257/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Lailyadhimah/" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Teams Section End -->
+</main>
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer.html' %}
+{% endblock %}

@@ -16,8 +16,13 @@ def fresh_rotten():
 
 # Render result page
 @app.route('/result-fresh-rotten')
-def crop_disease():
+def result_fresh_rotten():
     return render_template('fresh-rotten-predict.html')
+
+# Render about page
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 # Run flask app
 if __name__ == '__main__':

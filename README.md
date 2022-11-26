@@ -21,8 +21,6 @@
     <img src ="readme-thumb/display-page.png" alt="Display Home">
 </p>
 
-<br>
-
 # Fruity Demo Links
 #### [**Click here to view**](https://itsfruity.vercel.app/)
 
