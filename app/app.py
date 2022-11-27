@@ -8,11 +8,11 @@ from keras.models import load_model
 app = Flask(__name__)
 
 # Load fresh rotten model
-fresh_rotten_model = load_model('models/model_dir/model_best_fruity.hdf5')
+fresh_rotten_model = load_model('app/models/model_dir/model_best_fruity.hdf5')
 
 # Read label dictionary
 def fresh_rotten_label(result):
-    with open('models/label_dir/fresh_rotten_dic.json', 'r') as file:
+    with open('app/models/label_dir/fresh_rotten_dic.json', 'r') as file:
         labels = json.load(file)
 
     for key, value in labels.items():
@@ -50,7 +50,7 @@ def fresh_rotten():
 def result_fresh_rotten():
     file = request.files['file']
     if file and allowed_file(file.filename):
-        img_path = 'static/user_uploads/' + file.filename
+        img_path = 'app/static/user_uploads/' + file.filename
         file.save(img_path)
         prediction = predict_image(img_path)
         result = fresh_rotten_label(prediction)
@@ -65,5 +65,5 @@ def about():
 
 
 # Run flask app
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
