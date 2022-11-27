@@ -22,7 +22,7 @@
 </p>
 
 # Fruity Demo Links
-#### [**Click here to view**](https://itsfruity.vercel.app/)
+#### [**Click here to view**](https://try-deploy-website.herokuapp.com/)
 
 <br>
 
@@ -34,12 +34,13 @@ Hortikultura merupakan sub sektor pertanian yang memiliki kontribusi penting dal
    - HTML
    - CSS
    - JavaScript
-   - Python
+   - Python 3.9.13
 
 2. Framework/Library
    - Bootstrap
    - jQuery
    - Flask from Python
+   - Gunicorn 
 
 3. Library Machine Learning
    - Pandas
@@ -47,7 +48,8 @@ Hortikultura merupakan sub sektor pertanian yang memiliki kontribusi penting dal
    - Matplotlib
    - Seaborn
    - Scikit Learn
-   - Tensorflow
+   - Tensorflow 2.9.0
+   - Pillow
 
 4. Dataset
    - Lemon Quality Dataset https://www.kaggle.com/datasets/yusufemir/lemon-quality-dataset 
