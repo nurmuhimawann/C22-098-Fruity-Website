@@ -1,8 +1,7 @@
 # Import all library
-import os
+import os, json
 import tensorflow as tf
 import numpy as np
-import json
 from PIL import Image
 
 # Function to load model

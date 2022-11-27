@@ -23,7 +23,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="predicted-result bg-white text-center mb-4">
-                        <p class="fs-5 mb-0">This Fruit is <span class="fw-bold">Fresh Apple</span>.</p>
+                        <p class="fs-5 mb-0">This Fruit is <span class="fw-bold">{{ prediction }}</span>.</p>
                     </div>
                     <a class="text-decoration-none" href="{{ url_for('fresh_rotten') }}">
                         <button type="button" class="btn btn-dark">Back</button>

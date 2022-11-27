@@ -45,5 +45,5 @@ input.addEventListener('change', showFileName);
 function showFileName(e) {
     const input = e.srcElement;
     const fileName = input.files[0].name;
-    infoArea.textContent = 'File: ' + fileName;
+    infoArea.textContent = 'File name: ' + fileName;
 }
