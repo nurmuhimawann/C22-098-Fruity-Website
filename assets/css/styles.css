@@ -587,7 +587,9 @@ body {
     position: relative;
 }
 
-.testimonials>.container>.content-testimonials {
+.testimonials>.container,
+.testimonials>.container>.content-testimonials,
+.testimonials>.container>.carousel {
     position: relative;
 }
 
@@ -637,28 +639,41 @@ body {
     font-weight: 700;
 }
 
-.testimonials>.sun-bg {
+.testimonials>.container>.sun-bg {
     position: absolute;
-    bottom: 3rem;
-    left: -15rem;
-    z-index: 1;
+    z-index: -1;
+    object-fit: cover;
+    left: -21rem;
+    bottom: 0;
 }
 
+.carousel>.slider,
 .content-testimonials>.slider {
     position: absolute;
     top: 0;
     right: 0;
     width: 250px;
     box-sizing: border-box;
-    z-index: 5;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
 }
 
+.carousel>.slider {
+    z-index: 8;
+}
+
+.content-testimonials>.slider {
+    z-index: 5;
+}
+
 .slider>.icon-slide {
     display: flex;
     justify-content: flex-end;
+}
+
+.content-testimonials>.slider>.icon-slide {
+    visibility: hidden;
 }
 
 .slider>.icon-slide>i {
