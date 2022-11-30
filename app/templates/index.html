@@ -183,47 +183,161 @@
     <!-- Testimonial Section Begin -->
     <section id="testimonials" class="testimonials" style="overflow: hidden;">
         <div class="container">
+            <img class="sun-bg" src="{{ url_for('static', filename='img/sun-background.svg') }}" alt="background-sun">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <span class="section-title">04 • Testimonials</span>
                     <h2 class="section-sub-title mt-2">What People Say About Us</h2>
                 </div>
             </div>
-            <article class="content-testimonials mt-5">
-                <div class="row one-content">
-                    <div class="col-lg-4 text-content">
-                        <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="" class="quotes" />
-                        <div class="user-testimonials">
-                            <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
-                            <p>
-                                Ever since i work with Fruity, the fresh fruit sorting goes very
-                                quickly, so I can save a lot of time doing other work.
-                            </p>
-                            <div class="users mt-4">
-                                <span>Ismira Shafa Salsabilla</span>
-                                <br />
-                                <span>Brawijaya University Student’s</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 hero-content">
-                        <img src="{{ url_for('static', filename='img/users.png') }}" alt="user testimonials">
-                    </div>
-                </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="slider">
                     <div class="icon-slide">
-                        <i class="bi bi-arrow-left"></i>
-                        <i class="bi bi-arrow-right"></i>
-                    </div>
-                    <div class="slider-text">
-                        <h4>Testimonial 01</h4>
-                        <p>out of <span>10</span> testimonials</p>
+                        <i class="bi bi-arrow-left" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"></i>
+                        <i class="bi bi-arrow-right" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"></i>
                     </div>
                 </div>
-            </article>
-        </div>
-        <div class="sun-bg">
-            <img src="{{ url_for('static', filename='img/sun-background.svg') }}" alt="background">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="content-testimonials mt-5">
+                            <div class="row one-content">
+                                <div class="col-lg-4 text-content">
+                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
+                                    <div class="user-testimonials">
+                                        <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
+                                        <p>
+                                            Ever since i work with Fruity, the fresh fruit sorting goes very
+                                            quickly, so I can save a lot of time doing other work.
+                                        </p>
+                                        <div class="users mt-4">
+                                            <span>Ismira Shafa Salsabilla</span>
+                                            <br />
+                                            <span>Brawijaya University Student’s</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 hero-content">
+                                    <img src="{{ url_for('static', filename='img/feedback/ismira.png') }}" alt="ismira">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="icon-slide">
+                                    <i class="bi bi-arrow-left"></i>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="slider-text">
+                                    <h4>Testimonial 01</h4>
+                                    <p>out of <span>04</span> testimonials</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="content-testimonials mt-5">
+                            <div class="row one-content">
+                                <div class="col-lg-4 text-content">
+                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
+                                    <div class="user-testimonials">
+                                        <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
+                                        <p>
+                                            Ever since i work with Fruity, the fresh fruit sorting goes very
+                                            quickly, so I can save a lot of time doing other work.
+                                        </p>
+                                        <div class="users mt-4">
+                                            <span>Mayrieta Maharani Jazza</span>
+                                            <br />
+                                            <span>Gadjah Mada University Student’s</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 hero-content">
+                                    <img src="{{ url_for('static', filename='img/feedback/amay.png') }}" alt="amay">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="icon-slide">
+                                    <i class="bi bi-arrow-left"></i>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="slider-text">
+                                    <h4>Testimonial 02</h4>
+                                    <p>out of <span>04</span> testimonials</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="content-testimonials mt-5">
+                            <div class="row one-content">
+                                <div class="col-lg-4 text-content">
+                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
+                                    <div class="user-testimonials">
+                                        <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
+                                        <p>
+                                            Ever since i work with Fruity, the fresh fruit sorting goes very
+                                            quickly, so I can save a lot of time doing other work.
+                                        </p>
+                                        <div class="users mt-4">
+                                            <span>Octavia Allita Rosya</span>
+                                            <br />
+                                            <span>University of Indonesia Student's</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 hero-content">
+                                    <img src="{{ url_for('static', filename='img/feedback/alita.png') }}" alt="leeta">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="icon-slide">
+                                    <i class="bi bi-arrow-left"></i>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="slider-text">
+                                    <h4>Testimonial 03</h4>
+                                    <p>out of <span>04</span> testimonials</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="content-testimonials mt-5">
+                            <div class="row one-content">
+                                <div class="col-lg-4 text-content">
+                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
+                                    <div class="user-testimonials">
+                                        <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
+                                        <p>
+                                            Ever since i work with Fruity, the fresh fruit sorting goes very
+                                            quickly, so I can save a lot of time doing other work.
+                                        </p>
+                                        <div class="users mt-4">
+                                            <span>Sandra Lia Dwi Monica</span>
+                                            <br />
+                                            <span>State Polytechnic of Malang Student's</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 hero-content">
+                                    <img src="{{ url_for('static', filename='img/feedback/sandra.png') }}" alt="sandra">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="icon-slide">
+                                    <i class="bi bi-arrow-left"></i>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <div class="slider-text">
+                                    <h4>Testimonial 04</h4>
+                                    <p>out of <span>04</span> testimonials</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Testimonial End -->
