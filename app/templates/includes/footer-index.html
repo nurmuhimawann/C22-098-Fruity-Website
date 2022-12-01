@@ -1,19 +1,10 @@
 <footer class="container-fluid mt-5">
-    <div class="info mb-5">
-        <div class="links">
-            <div class="logo-socmed">
-                <img src="{{ url_for('static', filename='img/fruity.png') }}" alt="logo-fruity" />
-                <div class="social-links mt-2">
-                    <a href="https://www.instagram.com/dicoding/" target="_blank"><i
-                            class="bi bi-instagram"></i></a>
-                    <a href="https://twitter.com/dicoding/" target="_blank"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/dicoding/" target="_blank"><i
-                            class="bi bi-linkedin"></i></a>
-                    <a href="https://www.youtube.com/c/DicodingIndonesia" target="_blank"><i
-                            class="bi bi-youtube"></i></a>
-                </div>
-            </div>
-            <div class="useful-links">
+    <div class="row info">
+        <div class="col col-xl-3 col-lg-3 col-md-12 col-sm-12 logo-socmed mb-5">
+            <img src="{{ url_for('static', filename='img/fruity.png') }}" alt="logo-fruity" />
+        </div>
+        <div class="col col-xl-9 col-lg-9 col-md-12 col-sm-12 useful-links">
+            <div class="links-items">
                 <div class="website">
                     <span>Website</span>
                     <div class="web-links">
@@ -30,17 +21,25 @@
                     </div>
                 </div>
             </div>
+            <div class="address">
+                <div class="send-mail">
+                    <i class="bi bi-envelope"></i>
+                    <span>muhammad.himawan73@gmail.com</span>
+                </div>
+                <div class="github">
+                    <i class="bi bi-github"></i>
+                    <a href="https://github.com/nurmuhimawann/C22-098-Fruity-Website" target="_blank"><span>Project
+                            Repository</span></a>
+                </div>
+            </div>
         </div>
-        <div class="address">
-            <div class="send-mail">
-                <i class="bi bi-envelope"></i>
-                <span>muhammad.himawan73@gmail.com</span>
-            </div>
-            <div class="github">
-                <i class="bi bi-github"></i>
-                <a href="https://github.com/nurmuhimawann/C22-098-Fruity-Website" target="_blank"><span>Project
-                        Repository</span></a>
-            </div>
+    </div>
+    <div class="row info socials">
+        <div class="social-links mt-2">
+            <a href="https://www.instagram.com/dicoding/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/dicoding/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/dicoding/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/c/DicodingIndonesia" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
     </div>
     <div class="copyright mb-4">Copyright &copy;

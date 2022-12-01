@@ -7,11 +7,11 @@
     class="scrollspy-example" tabindex="0">
     <!-- Hero Section Begin -->
     <section class="canvas" id="hero" style="overflow: hidden;">
-        <div class="container">
+        <div class="row container">
             <div class="row">
-                <div class="col-lg-8 content-left">
+                <div class="col col-xl-8 col-lg-12 col-md-12 col-sm-12 content-left">
                     <article class="title">
-                        <h1>Freshly fruits is Always<br />the right choice</h1>
+                        <h1>Freshly fruits is Always <br />the right choice</h1>
                         <img src="{{ url_for('static', filename='img/traced-lines.svg') }}" alt="traced-lines" class="traced" />
                     </article>
                     <article class="sub-title">
@@ -28,7 +28,8 @@
                 </div>
             </div>
         </div>
-        <figure class="hero-image">
+        <figure class="row hero-image">
+            <div class="overlays"></div>
             <img src="{{ url_for('static', filename='img/hero-image.png') }}" alt="hero image">
         </figure>
     </section>
@@ -41,29 +42,6 @@
                 <div class="col-lg-6 text-left clearfix">
                     <span>01 • About Us</span>
                     <h2 class="fw-bold mt-1">Helping people to identify rotten <br> fruit fast</h2>
-                    <div class="wrapper">
-                        <div class="side-content">
-                            <span class="why fw-bold">Why Choose us ?</span>
-                            <div class="rectangle-primary"></div>
-                            <div class="rectangle-secondary"></div>
-                            <div class="ellips-left"></div>
-                            <div class="ellips-right"></div>
-                            <div class="group-text">
-                                <div class="text-item">
-                                    <span class="text-head one fw-semibold">100k+</span>
-                                    <span class="text-sub-head">People have tried</span>
-                                </div>
-                                <div class="text-item">
-                                    <span class="text-head two fw-semibold">Accurate</span>
-                                    <span class="text-sub-head">Give accurate results</span>
-                                </div>
-                                <div class="text-item">
-                                    <span class="text-head three fw-semibold">Fast</span>
-                                    <span class="text-sub-head">Quickly & easily identify</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-lg-6 text-about mt-4 clearfix">
                     <div class="horizontal-line"></div>
@@ -76,6 +54,30 @@
                     </div>
                     <div class="image-section mt-5">
                         <img src="{{ url_for('static', filename='img/grading-fruits.png') }}" alt="grading fruits">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper clearfix">
+                <div class="side-content">
+                    <span class="why fw-bold">Why Choose us ?</span>
+                    <div class="row rectangle-primary align-items-start">
+                        <div class="ellips-left"></div>
+                        <div class="row group-text align-items-center">
+                            <div class="col-auto text-item one">
+                                <span class="text-head fw-semibold">100k+</span>
+                                <span class="text-sub-head">People have tried</span>
+                            </div>
+                            <div class="col-auto text-item two">
+                                <span class="text-head fw-semibold">Accurate</span>
+                                <span class="text-sub-head">Give accurate results</span>
+                            </div>
+                            <div class="col-auto text-item three">
+                                <span class="text-head fw-semibold">Fast</span>
+                                <span class="text-sub-head">Quickly & easily identify</span>
+                            </div>
+                        </div>
+                        <div class="rectangle-secondary"></div>
+                        <div class="ellips-right"></div>
                     </div>
                 </div>
             </div>
@@ -96,21 +98,19 @@
                 </div>
             </div>
             <div class="row justify-content-center mt-5">
-                <div class="col-lg-4">
-                    <a class="text-decoration-none" href="fresh-rotten.html">
-                        <div class="cardBox">
-                            <div class="card">
-                                <img src="{{ url_for('static', filename='img/fruits-identification-bg.png') }}" class="card-img-top"
+                <a class="text-decoration-none" href="fresh-rotten.html">
+                    <div class="cardBox">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='img/fruits-identification-bg.png') }}" class="card-img-top"
                                     alt="people">
-                                <div class="card-info">
-                                    <h5 class="fw-bold">Fresh Fruit Identification</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Laudantium itaque, natus porro deserunt quia impedit nobis</p>
-                                </div>
+                            <div class="card-info">
+                                <h5 class="fw-bold">Fresh Fruit Identification</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laudantium itaque, natus porro deserunt quia impedit nobis</p>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="circle-left">
@@ -131,9 +131,8 @@
                     <h2 class="section-sub-title mt-2">How It Works?</h2>
                 </div>
             </div>
-
             <article class="row contents g-0">
-                <div class="col lg-3">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items marks">
                     <div class="content-card">
                         <img src="{{ url_for('static', filename='img/prepare-fruits.png') }}" alt="people with fruits">
                     </div>
@@ -147,7 +146,7 @@
                             unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
-                <div class="col lg-3">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items">
                     <div class="content-card cards card-colors">
                         <div class="overlay"></div>
                         <div class="circles">
@@ -161,7 +160,7 @@
                         <img src="{{ url_for('static', filename='img/fruits.png') }}" alt="fruits">
                     </div>
                 </div>
-                <div class="col lg-3">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items marks">
                     <div class="content-card">
                         <img src="{{ url_for('static', filename='img/holding-fruits.png') }}" alt="holding-fruits">
                     </div>
@@ -282,7 +281,7 @@
                                         <div class="users mt-4">
                                             <span>Octavia Allita Rosya</span>
                                             <br />
-                                            <span>University of Indonesia Student's</span>
+                                            <span>University of Indonesia</span>
                                         </div>
                                     </div>
                                 </div>
@@ -346,8 +345,8 @@
     <section id="faq" class="faq">
         <div class="container">
             <div class="row">
-                <div class="col-lg-1 vertical-line"></div>
-                <div class="col-lg-7">
+                <div class="col-1 vertical-line"></div>
+                <div class="col-11">
                     <span class="section-title">05 • FAQ</span>
                     <h2 class="section-sub-title mt-2">Any questions?</h2>
                     <p class="mt-3">If you have any questions, you may find your answer on this FAQ.<br>

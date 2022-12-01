@@ -1,21 +1,28 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
 body {
     position: relative;
 }
 
+
 /* Navbar Section */
 .navbar {
-    background-color: #57AC49;
+    background-color: var(--green-primary);
 }
+
 
 /* Fresh Rotten Section */
 .fresh-rotten {
-    background-color: #f6faf7;
+    background-color: var(--cream);
     padding: 3rem 0 13rem 0;
     min-height: 100vh;
 }
 
 .title>h3 {
-    color: #254C50;
+    color: var(--greenish-black);
     font-size: 26px;
 }
 
@@ -24,7 +31,7 @@ body {
 }
 
 form>.input-group {
-    border: 1px solid rgb(206, 212, 218);
+    border: 1px solid var(--purple-white-dark);
     border-radius: 0.25rem;
 }
 
@@ -40,8 +47,8 @@ form>.input-group {
 }
 
 .input-group-append>label {
-    background-color: rgb(226, 230, 234);
-    border-color: rgb(218, 224, 229);
+    background-color: var(--purple-white);
+    border-color: var(--purple-white-light);
 }
 
 .input-group-append i {
@@ -50,14 +57,14 @@ form>.input-group {
 
 form>.image-area {
     position: relative;
-    border: 2px dashed rgba(27, 25, 25, 0.7);
+    border: 2px dashed var(--red-black);
     border-radius: 0.25rem;
     padding: 1.1rem;
 }
 
 form>.image-area::before {
     content: 'Uploaded Image Result';
-    color: rgba(27, 25, 25, 0.8);
+    color: var(--red-black-8);
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
@@ -75,14 +82,19 @@ form>.image-area>img {
 
 .fresh-rotten button {
     width: 100%;
-    background-color: #7BC270;
-    border: #7BC270;
-    color: #fff;
     font-weight: 500;
+    border: 2px solid var(--cream);
+    background-color: var(--green-light);
+}
+
+.fresh-rotten button:active {
+    border-color: var(--green-light) !important;
+    background-color: var(--green-primary) !important;
 }
 
 .fresh-rotten button:hover {
-    background-color: #57AC49;
+    border-color: var(--cream);
+    background-color: var(--green-primary);
 }
 
 /* Footer Section */
@@ -92,7 +104,7 @@ form>.image-area>img {
     bottom: 0;
     right: 0;
     height: 4rem;
-    background-color: #57AC49;
+    background-color: var(--green-primary);
     display: flex;
 }
 
