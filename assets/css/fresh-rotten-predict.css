@@ -1,44 +1,56 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
 body {
     position: relative;
 }
 
+
 /* Navbar Section */
 .navbar {
-    background-color: #57AC49;
+    background-color: var(--green-primary);
 }
+
 
 /* Predict Fruits Section */
 .predicted-fresh-rotten {
     padding: 3rem 0 13rem 0;
     min-height: 100vh;
-    background-color: rgb(246, 250, 247);
+    background-color: var(--cream);
 }
 
 .title-predict {
-    color: #254C50;
+    color: var(--greenish-black);
     font-size: 26px;
 }
 
 .predicted-result {
     padding: 0.8rem;
-    border: 2px dashed rgba(27, 25, 25, 0.55);
+    border: 2px dashed var(--red-black);
     border-radius: 0.25rem;
 }
 
 .predicted-result>p{
-    color: rgba(0, 0, 0, .7);
+    color: var(--black-7);
 }
 
 .predicted-fresh-rotten button {
     width: 100%;
     font-weight: 500;
-    border-color: #7BC270;
-    background-color: #7BC270;
+    border: 2px solid var(--cream);
+    background-color: var(--green-light);
+}
+
+.predicted-fresh-rotten button:active {
+    border-color: var(--green-light) !important;
+    background-color: var(--green-primary) !important;
 }
 
 .predicted-fresh-rotten button:hover {
-    border-color: #57AC49;
-    background-color: #57AC49;
+    border-color: var(--cream);
+    background-color: var(--green-primary);
 }
 
 
@@ -49,7 +61,7 @@ body {
     bottom: 0;
     right: 0;
     height: 4rem;
-    background-color: #57AC49;
+    background-color: var(--green-primary);
     display: flex;
 }
 

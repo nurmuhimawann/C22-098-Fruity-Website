@@ -1,0 +1,48 @@
+/* Font */
+@font-face {
+    font-family: Avture;
+    src: url(../fonts/avture/Avture.otf);
+}
+
+:root {
+    /* Colors */
+    --cyan-darken: #10212240;
+    --cyan-dark: #102122;
+    --cyan-dark-8: #102122cc;
+    --cyan-dark-9: #102122e6;
+    --greenish-black: #254c50;
+    --green-blip: ##6ffc58;
+    --green-primary: #57AC49;
+    --green-light: #7BC270;
+    --green-teal: #b8f9d37a;
+    --orange: #ffa500;
+    --orange-peel: #F8B63C;
+    --pink: #FF0080;
+    --red-darken: #252525;
+    --red-dark: #242424;
+    --red-black: #1b1919b3;
+    --red-black-8: #1b1919cc;
+    --black-7: #000000b3;
+    --whitesmoke: #f5f5f5;
+    --white: #ffffff;
+    --white-8: #ffffffcc;
+    --white-9: #fffffff2;
+    --white-light-shade: #fbfbfb;
+    --cream: #f6faf7;
+    --gray-light: #dddddd;
+    --purple-white: #e2e6ea;
+    --purple-white-light: #dae0e5;
+    --purple-white-dark: #ced4da;
+    --gray-dark: #4E4E4E;
+
+    /* Typography */
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-avture: 'Avture';
+
+    /* Box Shadow */
+    --shadow-1: #1021230f;
+    --shadow-2: #0000001c;
+    --shadow-3: #00000026;
+    --shadow-4: #0000000a;
+    --shadow-5: #0000000d;
+}

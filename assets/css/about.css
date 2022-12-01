@@ -1,10 +1,16 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
 body {
     position: relative;
 }
 
+
 /* Hero Section */
 .about-fruity {
-    background-color: #57AC49;
+    background-color: var(--green-primary);
     display: flex;
     margin: 0 5px;
     border-bottom-left-radius: 20px;
@@ -35,7 +41,7 @@ body {
 }
 
 .content-text>.title>h1 {
-    color: #FBFBFB;
+    color: var(--white-light-shade);
     font-size: 50px;
 }
 
@@ -46,11 +52,60 @@ body {
 
 .content-text>p {
     width: 90%;
-    color: rgba(255, 255, 255, .9);
+    color: var(--white-9);
     font-size: 18px;
     line-height: 34px;
     margin-bottom: 30px;
 }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .about-fruity>.container {
+        margin: 50px auto 0px;
+    }
+
+    .fruity-image {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    .about-fruity>.container>.row {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .about-fruity>.container>.row>.content-text {
+        text-align: center;
+        max-width: 80%;
+        padding: 0 12px;
+        margin: 0 auto;
+    }
+
+    .content-text>.title {
+        visibility: hidden;
+        margin-bottom: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    .content-text>p {
+        width: 100%;
+        margin-top: -2rem;
+    }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .about-fruity>.container>.row {
+        flex-direction: column;
+        max-width: 99%;
+    }
+
+    .content-text>p {
+        margin-top: 0rem;
+    }
+}
+
 
 /* Teams Section */
 .teams {
@@ -60,9 +115,8 @@ body {
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem 3rem;
+    gap: 4rem 3rem;
     justify-content: space-evenly;
-
 }
 
 .card-items {
@@ -73,8 +127,8 @@ body {
     padding: 2rem 0;
     flex-direction: column;
     margin: 0 15px;
-    background-color: #FFF;
-    border: 1px solid #57ac49;
+    background-color: var(--white);
+    border: 1px solid var(--green-primary);
     border-radius: 50px 50px 30px 30px;
     transition: all 0.3s ease-out;
 }
@@ -100,10 +154,10 @@ body {
     height: 113px;
     display: inline-block;
     background-color: transparent;
-    border-top: 4px solid #7BC270;
+    border-top: 4px solid var(--green-light);
     border-left: 4px solid transparent;
-    border-right: 4px solid #7BC270;
-    border-bottom: 4px solid #7BC270;
+    border-right: 4px solid var(--green-light);
+    border-bottom: 4px solid var(--green-light);
 }
 
 .picture {
@@ -111,7 +165,7 @@ body {
     height: 100px;
     box-sizing: content-box;
     margin: 0 auto;
-    border: 2px solid rgba(111, 252, 88, 1);
+    border: 2px solid var(--green-blip);
     border-radius: 100px;
 }
 
@@ -133,7 +187,7 @@ body {
 }
 
 .card-information>h3 {
-    color: rgba(37, 37, 37, 1);
+    color: var(--red-darken);
     width: 100%;
     font-size: 17px;
     font-weight: 600;
@@ -147,7 +201,7 @@ body {
 }
 
 .card-information>.desc {
-    color: rgba(37, 37, 37, 1);
+    color: var(--red-darken);
     width: 90%;
     font-size: 13px;
     font-weight: 400;
@@ -157,14 +211,14 @@ body {
     padding: 4px 20px;
     margin: 0 auto;
     align-items: center;
-    border: 2px solid rgba(87, 172, 73, 1);
+    border: 2px solid var(--green-primary);
     border-radius: 10px;
-    background-color: rgba(87, 172, 73, 1);
+    background-color: var(--green-primary);
 }
 
 .mail-box>p {
     width: 100%;
-    color: rgba(255, 255, 255, 1);
+    color: var(--white);
     font-size: 12px;
     text-align: center;
     margin: 0;
@@ -181,7 +235,7 @@ body {
 }
 
 .socmed-icons>a>i {
-    color: rgba(87, 172, 73, 1);
+    color: var(--green-primary);
     width: 48px;
     text-align: center;
     font-size: 24px;
@@ -189,20 +243,35 @@ body {
 }
 
 .socmed-icons>a>:hover {
-    color: #7BC270;
+    color: var(--green-light);
 }
 
 .card-items:hover {
     transform: translateY(-5px) scale(1.005) translateZ(0);
-    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-        0 24px 46px rgba(184, 249, 211, 0.48);
+    box-shadow: 0 24px 36px var(--shadow-2),
+        0 24px 46px var(--green-teal);
 }
 
 .card-items:active {
     transform: scale(1) translateZ(0);
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
-        0 15px 24px rgba(184, 249, 211, 0.48);
+    box-shadow: 0 15px 24px var(--shadow-2),
+        0 15px 24px var(--green-teal);
 }
+
+ /* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .card-list {
+        gap: 4rem 0rem;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .card-list {
+        gap: 4rem 2rem;
+    }
+}
+
 
 /* Footer Section */
 .footer {
@@ -211,7 +280,7 @@ body {
     bottom: 0;
     right: 0;
     height: 4rem;
-    background-color: #57AC49;
+    background-color: var(--green-primary);
     display: flex;
 }
 
