@@ -10,6 +10,7 @@ body {
 
 /* Hero Section */
 .about-fruity {
+    height: 100vh;
     background-color: var(--green-primary);
     display: flex;
     margin: 0 5px;
@@ -19,7 +20,7 @@ body {
 }
 
 .about-fruity>.container {
-    margin: 150px auto 0px;
+    margin: 120px auto 0px;
 }
 
 .fruity-image>img {
@@ -36,13 +37,13 @@ body {
 
 .content-text>.title {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     flex-direction: column;
 }
 
 .content-text>.title>h1 {
     color: var(--white-light-shade);
-    font-size: 50px;
+    font-size: 48px;
 }
 
 .content-text>.title>img {
@@ -51,11 +52,18 @@ body {
 }
 
 .content-text>p {
-    width: 90%;
+    text-align: justify;
     color: var(--white-9);
     font-size: 18px;
     line-height: 34px;
     margin-bottom: 30px;
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .about-fruity {
+        height: auto;
+    }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -89,6 +97,7 @@ body {
     }
 
     .content-text>p {
+        text-align: center;
         width: 100%;
         margin-top: -2rem;
     }
