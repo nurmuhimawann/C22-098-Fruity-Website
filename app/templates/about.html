@@ -49,7 +49,116 @@
                     </p>
                 </div>
             </div>
-            <div class="card-list mt-5 mb-5" id="card-list">
+            <div class="card-list mt-5 mb-5">
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/mawan.png') }}" alt="Mawan" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Nur Muhammad Himawan</h3>
+                        <span class="roles">Team Leaders</span>
+                        <p class="desc">
+                            A kiddo who love to playing around with the design via Illustrator & Photoshop.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>nurmuhimawann@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://twitter.com/nurmuhimawann/" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/mawann_/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nurmuhimawann/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/nurmuhimawann/" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/putri.jpg') }}" alt="Kak Putri" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Putri Nur Aini Mahfudz</h3>
+                        <span class="roles">Machine Learning Developer</span>
+                        <p class="desc">
+                            Who loves to explore new things and is highly enthusiastic about learning, especially in data science.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>putrinura787@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://twitter.com/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/putrinamahfudz/" target="_blank"><i
+                                class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/laily.jpeg') }}" alt="Kak Laily" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Laily Farkhah Adhimah</h3>
+                        <span class="roles">Machine Learning Developer</span>
+                        <p class="desc">
+                            A lifelong learner who seeks challenges, to develop himself personally and professionally.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>lailyfarkhaha@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://twitter.com/dariLailyfa_/" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/laily_adhimah/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/laily-farkhah-adhimah-13b953257/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Lailyadhimah/" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/ilman.jpeg') }}" alt="Kak Ilman"
+                                class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Mohamad Ilman Huda</h3>
+                        <span class="roles">Front-End Developer</span>
+                        <p class="desc">
+                            I'm a Software Developer with more than two years of experience in the programming field.
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>siapaajah256@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/ilman_hudaa/ " target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamad-ilman-huda/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/hudilman" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
             </div>
         </div>
     </section>
@@ -63,6 +172,5 @@
 
 <!-- scripts JS-->
 {% block javascripts %}
-<script type="module" src="{{ url_for('static', filename='js/script-about.js') }}" defer></script>
 <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
 {% endblock %}

@@ -256,15 +256,15 @@ body {
 }
 
 .card-items:hover {
-    transform: translateY(-5px) scale(1.005) translateZ(0);
+    transform: translateY(-5px) scale(1.005) translateZ(0) !important;
     box-shadow: 0 24px 36px var(--shadow-2),
-        0 24px 46px var(--green-teal);
+        0 24px 46px var(--green-teal) !important;
 }
 
 .card-items:active {
-    transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0) !important;
     box-shadow: 0 15px 24px var(--shadow-2),
-        0 15px 24px var(--green-teal);
+        0 15px 24px var(--green-teal) !important;
 }
 
  /* `xl` applies to large devices (desktops, less than 1200px) */
