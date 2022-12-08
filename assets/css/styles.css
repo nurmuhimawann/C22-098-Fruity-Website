@@ -12,6 +12,7 @@ body {
 .services,
 .how-it-works,
 .testimonials,
+.gallery,
 .faq {
     padding: 5rem 0 3rem;
 }
@@ -633,10 +634,6 @@ body {
     filter: brightness(0.9);
 }
 
-.contents>.content-items>.card-colors {
-    
-}
-
 .contents>.content-items>.cards:hover {
     transform: translateY(-5px) scale(1.005) translateZ(0);
     -webkit-box-shadow: 4px 5px 28px 0px var(--shadow-3);
@@ -948,6 +945,120 @@ body {
     .one-content>.hero-content>img {
         width: 80%;
     }
+}
+
+
+/* Gallery Section */
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas:
+        'img-1 img-1 img-2 img-3'
+        'img-4 img-5 img-6 img-3'
+        'img-4 img-7 img-8 img-8'
+        'img-9 img-9 img-10 img-11'
+        'img-13 img-12 img-12 img-11';
+}
+
+.image-gallery a {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-gallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: rgba(27, 25, 25, 0.55);
+    backdrop-filter: blur(0.5rem);
+    opacity: .4;
+    transition: opacity 0.5s;
+}
+
+.image-gallery a:hover::before {
+    opacity: 0;
+}
+
+.img-1 {
+    grid-area: img-1;
+    background-image: url(../img/gallery/blueberry.jpg);
+}
+
+.img-2 {
+    grid-area: img-2;
+    background-image: url(../img/gallery/orange.jpg);
+}
+
+.img-3 {
+    grid-area: img-3;
+    min-height: 515px;
+    background-image: url(../img/gallery/apples.jpg);
+}
+
+.img-4 {
+    grid-area: img-4;
+    min-height: 515px;
+    background-image: url(../img/gallery/strawberry.jpg);
+}
+
+.img-5 {
+    grid-area: img-5;
+    background-image: url(../img/gallery/mango.jpg);
+}
+
+.img-6 {
+    grid-area: img-6;
+    background-image: url(../img/gallery/oranges.jpg);
+}
+
+.img-7 {
+    grid-area: img-7;
+    background-image: url(../img/gallery/pepper.jpg);
+}
+
+.img-8 {
+    grid-area: img-8;
+    background-image: url(../img/gallery/tomato.jpg);
+}
+
+.img-9 {
+    grid-area: img-9;
+    background-image: url(../img/gallery/tomatoes.jpg);
+}
+
+.img-10 {
+    grid-area: img-10;
+    background-image: url(../img/gallery/grape.jpg);
+}
+
+.img-11 {
+    grid-area: img-11;
+    min-height: 515px;
+    background-image: url(../img/gallery/strawberrys.jpg);
+}
+
+.img-12 {
+    grid-area: img-12;
+    background-image: url(../img/gallery/watermelon.jpg);
+}
+
+.img-13 {
+    grid-area: img-13;
+    background-image: url(../img/gallery/quincy.jpg);
 }
 
 

@@ -1,0 +1,58 @@
+[
+    {
+        "image": "assets/img/team/mawan.png",
+        "name": "Nur Muhammad Himawan",
+        "alternateText": "Mawan",
+        "roles": "Team Leader",
+        "description": "A kiddo who love to playing around with the design via Illustrator & Photoshop.",
+        "email": "mawann@gmail.com",
+        "socmed": {
+            "twitter": "https://twitter.com/nurmuhimawann/",
+            "instagram": "https://www.instagram.com/mawann_/",
+            "linkedin": "https://www.linkedin.com/in/nurmuhimawann/",
+            "github": "https://github.com/nurmuhimawann/"
+        }
+    },
+    {
+        "image": "assets/img/team/putri.jpg",
+        "name": "Putri Nur Aini Mahfudz",
+        "alternateText": "Putri",
+        "roles": "Machine Learning Developer",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto, sint distinctio.",
+        "email": "putrinura787@gmail.com",
+        "socmed": {
+            "twitter": "https://twitter.com/putrinamahfudz/",
+            "instagram": "https://www.instagram.com/putrinamahfudz/",
+            "linkedin": "https://www.linkedin.com/in/putrinamahfudz/",
+            "github": "https://github.com/putrinamahfudz/"
+        }
+    },
+    {
+        "image": "assets/img/team/laily.jpeg",
+        "name": "Laily Farkhah Adhimah",
+        "alternateText": "Laily",
+        "roles": "Machine Learning Developer",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto, sint distinctio.",
+        "email": "lailyfarkhaha@gmail.com",
+        "socmed": {
+            "twitter": "https://twitter.com/dariLailyfa_/",
+            "instagram": "https://www.instagram.com/laily_adhimah/",
+            "linkedin": "https://www.linkedin.com/in/laily-farkhah-adhimah-13b953257/",
+            "github": "https://github.com/Lailyadhimah/"
+        }
+    },
+    {
+        "image": "assets/img/team/ilman.jpeg",
+        "name": "Mohamad Ilman Huda",
+        "alternateText": "Ilman",
+        "roles": "Front-End Developer",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque nisi iusto, sint distinctio.",
+        "email": "siapaajah256@gmail.com",
+        "socmed": {
+            "twitter": "#",
+            "instagram": "https://www.instagram.com/ilman_hudaa/",
+            "linkedin": "https://www.linkedin.com/in/mohamad-ilman-huda/",
+            "github": "https://github.com/hudilman"
+        }
+    }
+]

@@ -29,6 +29,12 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Styles CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -103,31 +109,8 @@
                     <div class="col-lg-6 text-left clearfix">
                         <span>01 • About Us</span>
                         <h2 class="fw-bold mt-1">Helping people to identify rotten <br> fruit fast</h2>
-                        <!-- <div class="wrapper">
-                            <div class="side-content">
-                                <span class="why fw-bold">Why Choose us ?</span>
-                                <div class="rectangle-primary"></div>
-                                <div class="rectangle-secondary"></div>
-                                <div class="ellips-left"></div>
-                                <div class="ellips-right"></div>
-                                <div class="group-text">
-                                    <div class="text-item">
-                                        <span class="text-head one fw-semibold">100k+</span>
-                                        <span class="text-sub-head">People have tried</span>
-                                    </div>
-                                    <div class="text-item">
-                                        <span class="text-head two fw-semibold">Accurate</span>
-                                        <span class="text-sub-head">Give accurate results</span>
-                                    </div>
-                                    <div class="text-item">
-                                        <span class="text-head three fw-semibold">Fast</span>
-                                        <span class="text-sub-head">Quickly & easily identify</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
-                    <div class="col-lg-6 text-about mt-4 clearfix">
+                    <div class="col-lg-6 text-about mt-4 clearfix" data-aos="fade-left" data-aos-duration="1000">
                         <div class="horizontal-line"></div>
                         <p>Established in 2022, fruity’s goal is to help as many people as we can to identify rotten
                             fruit fast by providing the most accurate predictions possible to increase their
@@ -141,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrapper clearfix">
+                <div class="wrapper clearfix" data-aos="fade-right" data-aos-duration="1000">
                     <div class="side-content">
                         <span class="why fw-bold">Why Choose us ?</span>
                         <div class="row rectangle-primary align-items-start">
@@ -181,15 +164,15 @@
                         <h2 class="section-sub-title mt-2">Our Services</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center mt-5">
+                <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
                     <a class="text-decoration-none" href="fresh-rotten.html">
                         <div class="cardBox">
                             <div class="card">
-                                <img src="assets/img/fruits-identification-bg.png" class="card-img-top" alt="people">
+                                <img src="assets/img/fruits-identification.jpg" class="card-img-top" alt="people">
                                 <div class="card-info">
                                     <h5 class="fw-bold">Fresh Fruit Identification</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Laudantium itaque, natus porro deserunt quia impedit nobis</p>
+                                    <p class="card-text">Our service will help you identify fresh or rotten fruit quite
+                                        easily. Just upload an image of your fruit, and you will get the results.</p>
                                 </div>
                             </div>
                         </div>
@@ -214,9 +197,9 @@
                         <h2 class="section-sub-title mt-2">How It Works?</h2>
                     </div>
                 </div>
-
-                <article class="row contents g-0">
-                    <div class="col xl-3 lg-12 md-12 sm-12 content-items marks">
+                <article class="row contents g-0" id="content-list">
+                    <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down"
+                        data-aos-duration="1000">
                         <div class="content-card">
                             <img src="assets/img/prepare-fruits.png" alt="people with fruits">
                         </div>
@@ -226,25 +209,28 @@
                                 <i class="fa-solid fa-images"></i>
                             </div>
                             <h4>Prepare Your Image</h4>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>To use Fruity, prepare an image of the fruit you want to identify. Then, please tap the
+                                service menu on the homepage. So, upload your image and press the identification
+                                button.</p>
                         </div>
                     </div>
-                    <div class="col xl-3 lg-12 md-12 sm-12 content-items">
+                    <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
                         <div class="content-card cards card-colors">
                             <div class="overlay"></div>
                             <div class="circles">
                                 <ion-icon name="finger-print"></ion-icon>
                             </div>
                             <h4>Identify</h4>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Fruity is the powerful utility that offers the fastest way to identify fresh or rotten
+                                fruit in seconds. The system will work to classify your fruits by just waiting one
+                                second.</p>
                         </div>
                         <div class="content-card">
                             <img src="assets/img/fruits.png" alt="fruits">
                         </div>
                     </div>
-                    <div class="col xl-3 lg-12 md-12 sm-12 content-items marks">
+                    <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down"
+                        data-aos-duration="1000">
                         <div class="content-card">
                             <img src="assets/img/holding-fruits.png" alt="holding-fruits">
                         </div>
@@ -254,12 +240,10 @@
                                 <i class="fa-brands fa-apple"></i>
                             </div>
                             <h4>Result</h4>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>The app displays information on the page about whether your fruit is fresh or rotten.</p>
+                            <br><br>
                         </div>
                     </div>
-
-
                 </article>
             </div>
         </section>
@@ -284,114 +268,25 @@
                                 data-bs-slide="next"></i>
                         </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <article class="content-testimonials mt-5">
-                                <div class="row one-content">
-                                    <div class="col-lg-4 text-content">
-                                        <img src="assets/img/quotes.png" alt="" class="quotes" />
-                                        <div class="user-testimonials">
-                                            <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
-                                            <p>
-                                                Ever since i work with Fruity, the fresh fruit sorting goes very
-                                                quickly, so I can save a lot of time doing other work.
-                                            </p>
-                                            <div class="users mt-4">
-                                                <span>Ismira Shafa Salsabilla</span>
-                                                <br />
-                                                <span>Brawijaya University Student’s</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 hero-content">
-                                        <img src="assets/img/feedback/ismira.png" alt="user testimonials">
-                                    </div>
-                                </div>
-                                <div class="slider">
-                                    <div class="icon-slide">
-                                        <i class="bi bi-arrow-left"></i>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <div class="slider-text">
-                                        <h4>Testimonial 01</h4>
-                                        <p>out of <span>10</span> testimonials</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item">
-                            <article class="content-testimonials mt-5">
-                                <div class="row one-content">
-                                    <div class="col-lg-4 text-content">
-                                        <img src="assets/img/quotes.png" alt="" class="quotes" />
-                                        <div class="user-testimonials">
-                                            <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
-                                            <p>
-                                                Ever since i work with Fruity, the fresh fruit sorting goes very
-                                                quickly, so I can save a lot of time doing other work.
-                                            </p>
-                                            <div class="users mt-4">
-                                                <span>Mayrieta Maharani Jazza</span>
-                                                <br />
-                                                <span>Gadjah Mada University Student’s</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 hero-content">
-                                        <img src="assets/img/feedback/amay.png" alt="user testimonials">
-                                    </div>
-                                </div>
-                                <div class="slider">
-                                    <div class="icon-slide">
-                                        <i class="bi bi-arrow-left"></i>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <div class="slider-text">
-                                        <h4>Testimonial 02</h4>
-                                        <p>out of <span>10</span> testimonials</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="carousel-item">
-                            <article class="content-testimonials mt-5">
-                                <div class="row one-content">
-                                    <div class="col-lg-4 text-content">
-                                        <img src="assets/img/quotes.png" alt="" class="quotes" />
-                                        <div class="user-testimonials">
-                                            <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
-                                            <p>
-                                                Ever since i work with Fruity, the fresh fruit sorting goes very
-                                                quickly, so I can save a lot of time doing other work.
-                                            </p>
-                                            <div class="users mt-4">
-                                                <span>Octavia Allita Rosya</span>
-                                                <br />
-                                                <span>University of Indonesia</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 hero-content">
-                                        <img src="assets/img/feedback/alita.png" alt="user testimonials">
-                                    </div>
-                                </div>
-                                <div class="slider">
-                                    <div class="icon-slide">
-                                        <i class="bi bi-arrow-left"></i>
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <div class="slider-text">
-                                        <h4>Testimonial 03</h4>
-                                        <p>out of <span>10</span> testimonials</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+                    <div class="carousel-inner" id="review-list"></div>
                 </div>
             </div>
         </section>
         <!-- Testimonial End -->
+
+        <!-- Gallery Section Begin -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <span class="section-title">05 • Gallery</span>
+                        <h2 class="section-sub-title mt-2 mb-4">Our Fresh Fruits</h2>
+                    </div>
+                </div>
+                <div class="image-gallery mt-5" id="image-gallery" style="overflow: hidden;"></div>
+            </div>
+        </section>
+        <!-- Gallery End -->
 
         <!-- FAQ Section Begin -->
         <section id="faq" class="faq">
@@ -399,92 +294,14 @@
                 <div class="row">
                     <div class="col-1 vertical-line"></div>
                     <div class="col-11">
-                        <span class="section-title">05 • FAQ</span>
+                        <span class="section-title">06 • FAQ</span>
                         <h2 class="section-sub-title mt-2">Any questions?</h2>
                         <p class="mt-3">If you have any questions, you may find your answer on this FAQ.<br>
-                            Not answered yet ? email us on <span class="fw-bold">muhammad.himawan73@gmail.com</span></p>
+                            Not answered yet ? email us on <span class="fw-bold">muhammad.himawan73@gmail.com</span>
+                        </p>
                     </div>
                 </div>
-                <article class="faq-list mt-4">
-                    <div class="faq-item mb-3">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                            aria-expanded="false" aria-controls="collapseExample1">
-                            <i class="fa-solid fa-leaf"></i>How Fruity can help my business?<i
-                                class="bi bi-chevron-down fw-bold"></i>
-                        </a>
-                        <div class="collapse" id="collapseExample1">
-                            <div class="text-accordion">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item mb-3">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample2" role="button"
-                            aria-expanded="false" aria-controls="collapseExample2">
-                            <i class="fa-solid fa-leaf"></i>What are the advantages of fruity service?<i
-                                class="bi bi-chevron-down fw-bold"></i>
-                        </a>
-                        <div class="collapse" id="collapseExample2">
-                            <div class="text-accordion">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item mb-3">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample3" role="button"
-                            aria-expanded="false" aria-controls="collapseExample3">
-                            <i class="fa-solid fa-leaf"></i>How to use fruity service?<i
-                                class="bi bi-chevron-down fw-bold"></i>
-                        </a>
-                        <div class="collapse" id="collapseExample3">
-                            <div class="text-accordion">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item mb-3">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample4" role="button"
-                            aria-expanded="false" aria-controls="collapseExample4">
-                            <i class="fa-solid fa-leaf"></i>What fruits can be identified by Fruity?<i
-                                class="bi bi-chevron-down fw-bold"></i>
-                        </a>
-                        <div class="collapse" id="collapseExample4">
-                            <div class="text-accordion">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item mb-3">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample5" role="button"
-                            aria-expanded="false" aria-controls="collapseExample5">
-                            <i class="fa-solid fa-leaf"></i>What images are allowed to be uploaded?<i
-                                class="bi bi-chevron-down fw-bold"></i>
-                        </a>
-                        <div class="collapse" id="collapseExample5">
-                            <div class="text-accordion">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item mb-3">
-                        <a class="btn" data-bs-toggle="collapse" href="#collapseExample6" role="button"
-                            aria-expanded="false" aria-controls="collapseExample6">
-                            <i class="fa-solid fa-leaf"></i>How many times can I use fruity service?<i
-                                class="bi bi-chevron-down fw-bold"></i>
-                        </a>
-                        <div class="collapse" id="collapseExample6">
-                            <div class="text-accordion">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                <article class="faq-list mt-4" id="faq-list"></article>
             </div>
         </section>
         <!-- FAQ Section End -->
@@ -495,10 +312,9 @@
         <div class="row info">
             <div class="col col-xl-3 col-lg-3 col-md-12 col-sm-12 logo-socmed mb-5">
                 <img src="assets/img/fruity.png" alt="logo-fruity" />
-
             </div>
             <div class="col col-xl-9 col-lg-9 col-md-12 col-sm-12 useful-links">
-                <div class="links-items">
+                <div class="links-items" data-aos="fade-left" data-aos-duration="1000">
                     <div class="website">
                         <span>Website</span>
                         <div class="web-links">
@@ -515,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="address">
+                <div class="address" data-aos="fade-left" data-aos-duration="1000">
                     <div class="send-mail">
                         <i class="bi bi-envelope"></i>
                         <span>muhammad.himawan73@gmail.com</span>
@@ -552,14 +368,29 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
     <!-- Ion Icon Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+
     <!-- script.JS -->
+    <script type="module" src="assets/js/script-index.js"></script>
     <script src="assets/js/script.js" defer></script>
 </body>
 
