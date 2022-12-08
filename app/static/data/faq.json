@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "question": "How Fruity can help my business?",
+        "answer": "Everyone is interested in getting fresh and quality fruits. Fruity is the powerful utility that offers the fastest way to identify fresh or rotten fruit in seconds. The system will work to classify your fruits by just waiting one second."
+    },
+    {
+        "id": "2",
+        "question": "What are the advantages of fruity service?",
+        "answer": "For farmers, sellers and fruit processing industries can increase high productivity at low cost because the process of classifying fresh and rotten fruit doesn't have to be done manually. For fruit consumers (housewife, students, etc.), fruit as a fruit utility tool can help in obtaining fresh and safe fruit for consumption so that it is good for health."
+    },
+    {
+        "id": "3",
+        "question": "How to use fruity service?",
+        "answer": "To identify fresh or rotten fruit, you simply need to upload an image in our built-in tool, and the app will tell you what it is in seconds!"
+    },
+    {
+        "id": "4",
+        "question": "What fruits can be identified by Fruity?",
+        "answer": "Our application is still limited to quality identification in apples, bananas, grapes, guavas, jujubes, oranges, pomegranates and strawberries. We will continue to strive to develop this application to function by accepting more types of fruit in the future."
+    },
+    {
+        "id": "5",
+        "question": "What images are allowed to be uploaded?",
+        "answer": "The application can only accept input in the form of images with file extensions .JPG, .JPEG and .PNG only."
+    },
+    {
+        "id": "6",
+        "question": "One of the identifications is not accurate, what should I do?",
+        "answer": "Since the app relies on images to identify, changing the angle or distance a bit can help and making sure the image is focused on the object you want to identify will most likely help."
+    }
+]

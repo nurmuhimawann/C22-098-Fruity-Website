@@ -53,3 +53,9 @@
 {% block footer %}
 {% include 'includes/footer.html' %}
 {% endblock %}
+
+<!-- scripts JS-->
+{% block javascripts %}
+<script src="{{ url_for('static', filename='js/show-uploads.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+{% endblock %}

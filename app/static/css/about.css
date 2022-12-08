@@ -159,8 +159,8 @@ body {
 
 .line-pict {
     border-radius: 50%;
-    width: 113px;
-    height: 113px;
+    width: 110px;
+    height: 110px;
     display: inline-block;
     background-color: transparent;
     border-top: 4px solid var(--green-light);
@@ -173,7 +173,7 @@ body {
     width: 100px;
     height: 100px;
     box-sizing: content-box;
-    margin: 0 auto;
+    margin: 1px auto;
     border: 2px solid var(--green-blip);
     border-radius: 100px;
 }

@@ -1,11 +1,9 @@
 # Import library
 import tensorflow as tf
 import numpy as np
-from flask import Flask, render_template, url_for, request, json
+from flask import redirect, render_template, url_for, request, json
 from keras.models import load_model
-
-# Create flask app
-app = Flask(__name__)
+from app import app
 
 # Load fresh rotten model
 fresh_rotten_model = load_model('app/models/model_dir/model_best_fruity.hdf5')
@@ -56,14 +54,10 @@ def result_fresh_rotten():
         result = fresh_rotten_label(prediction)
         return render_template('fresh-rotten-predict.html', prediction=result)
     else:
-        return render_template('fresh-rotten.html')
+        return redirect(url_for('fresh_rotten'))
 
 # Render about page
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-
-# Run flask app
-# if __name__ == '__main__':
-#     app.run(debug=True)

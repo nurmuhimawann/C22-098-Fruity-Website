@@ -3,8 +3,7 @@
 {% block title %}Fruity{% endblock %}
 
 {% block content %}
-<main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
-    class="scrollspy-example" tabindex="0">
+<main>
     <!-- Hero Section Begin -->
     <section class="canvas" id="hero" style="overflow: hidden;">
         <div class="row container">
@@ -43,7 +42,7 @@
                     <span>01 • About Us</span>
                     <h2 class="fw-bold mt-1">Helping people to identify rotten <br> fruit fast</h2>
                 </div>
-                <div class="col-lg-6 text-about mt-4 clearfix">
+                <div class="col-lg-6 text-about mt-4 clearfix" data-aos="fade-left" data-aos-duration="1000">
                     <div class="horizontal-line"></div>
                     <p>Established in 2022, fruity’s goal is to help as many people as we can to identify rotten
                         fruit fast by providing the most accurate predictions possible to increase their
@@ -57,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper clearfix">
+            <div class="wrapper clearfix" data-aos="fade-right" data-aos-duration="1000">
                 <div class="side-content">
                     <span class="why fw-bold">Why Choose us ?</span>
                     <div class="row rectangle-primary align-items-start">
@@ -97,8 +96,8 @@
                     <h2 class="section-sub-title mt-2">Our Services</h2>
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
-                <a class="text-decoration-none" href="fresh-rotten.html">
+            <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <a class="text-decoration-none" href="{{ url_for('fresh_rotten') }}">
                     <div class="cardBox">
                         <div class="card">
                             <img src="{{ url_for('static', filename='img/fruits-identification.jpg') }}" class="card-img-top"
@@ -132,7 +131,7 @@
                 </div>
             </div>
             <article class="row contents g-0">
-                <div class="col xl-3 lg-12 md-12 sm-12 content-items marks">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
                     <div class="content-card">
                         <img src="{{ url_for('static', filename='img/prepare-fruits.png') }}" alt="people with fruits">
                     </div>
@@ -146,7 +145,7 @@
                             service menu on the homepage. So, upload your image and press the identification button.</p>
                     </div>
                 </div>
-                <div class="col xl-3 lg-12 md-12 sm-12 content-items">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
                     <div class="content-card cards card-colors">
                         <div class="overlay"></div>
                         <div class="circles">
@@ -160,7 +159,7 @@
                         <img src="{{ url_for('static', filename='img/fruits.png') }}" alt="fruits">
                     </div>
                 </div>
-                <div class="col xl-3 lg-12 md-12 sm-12 content-items marks">
+                <div class="col xl-3 lg-12 md-12 sm-12 content-items" data-aos="fade-down" data-aos-duration="1000">
                     <div class="content-card">
                         <img src="{{ url_for('static', filename='img/holding-fruits.png') }}" alt="holding-fruits">
                     </div>
@@ -198,148 +197,25 @@
                             data-bs-slide="next"></i>
                     </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <article class="content-testimonials mt-5">
-                            <div class="row one-content">
-                                <div class="col-lg-4 text-content">
-                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
-                                    <div class="user-testimonials">
-                                        <h3>Saves 3x faster time for sorting fresh fruit after using Fruity</h3>
-                                        <p>
-                                            Ever since i work with Fruity, the fresh fruit sorting goes very
-                                            quickly, so I can save a lot of time doing other work.
-                                        </p>
-                                        <div class="users mt-4">
-                                            <span>Ismira Shafa Salsabilla</span>
-                                            <br />
-                                            <span>Brawijaya University Student’s</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 hero-content">
-                                    <img src="{{ url_for('static', filename='img/feedback/ismira.png') }}" alt="ismira">
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <div class="icon-slide">
-                                    <i class="bi bi-arrow-left"></i>
-                                    <i class="bi bi-arrow-right"></i>
-                                </div>
-                                <div class="slider-text">
-                                    <h4>Testimonial 01</h4>
-                                    <p>out of <span>04</span> testimonials</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="carousel-item">
-                        <article class="content-testimonials mt-5">
-                            <div class="row one-content">
-                                <div class="col-lg-4 text-content">
-                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
-                                    <div class="user-testimonials">
-                                        <h3>The best app I've ever used. Easy to use and very helpful</h3>
-                                        <p>
-                                            Identifying from Fruity helped me because I could easily find the condition of the 
-                                            fruit I bought from the fruit seller.
-                                        </p>
-                                        <div class="users mt-4">
-                                            <span>Mayrieta Maharani Jazza</span>
-                                            <br />
-                                            <span>Gadjah Mada University Student’s</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 hero-content">
-                                    <img src="{{ url_for('static', filename='img/feedback/amay.png') }}" alt="amay">
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <div class="icon-slide">
-                                    <i class="bi bi-arrow-left"></i>
-                                    <i class="bi bi-arrow-right"></i>
-                                </div>
-                                <div class="slider-text">
-                                    <h4>Testimonial 02</h4>
-                                    <p>out of <span>04</span> testimonials</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="carousel-item">
-                        <article class="content-testimonials mt-5">
-                            <div class="row one-content">
-                                <div class="col-lg-4 text-content">
-                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
-                                    <div class="user-testimonials">
-                                        <h3>Fruity has proven to be very effective in increasing productivity</h3>
-                                        <p>
-                                            As a farmer, my father finds it helpful to have the Fruity app. 
-                                            Easy to use and can increase productivity in sorting fruit.
-                                        </p>
-                                        <div class="users mt-4">
-                                            <span>Octavia Allita Rosya</span>
-                                            <br />
-                                            <span>University of Indonesia</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 hero-content">
-                                    <img src="{{ url_for('static', filename='img/feedback/alita.png') }}" alt="leeta">
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <div class="icon-slide">
-                                    <i class="bi bi-arrow-left"></i>
-                                    <i class="bi bi-arrow-right"></i>
-                                </div>
-                                <div class="slider-text">
-                                    <h4>Testimonial 03</h4>
-                                    <p>out of <span>04</span> testimonials</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="carousel-item">
-                        <article class="content-testimonials mt-5">
-                            <div class="row one-content">
-                                <div class="col-lg-4 text-content">
-                                    <img src="{{ url_for('static', filename='img/quotes.png') }}" alt="quote" class="quotes" />
-                                    <div class="user-testimonials">
-                                        <h3>Attractive interface web offers beneficial features to get fresh fruits</h3>
-                                        <p>
-                                            I love everything about this app, the user interface is beautiful, and the features are impressive, 
-                                            making it easier for me to choose fresh fruits for daily consumption.
-                                        </p>
-                                        <div class="users mt-4">
-                                            <span>Sandra Lia Dwi Monica</span>
-                                            <br />
-                                            <span>State Polytechnic of Malang Student's</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 hero-content">
-                                    <img src="{{ url_for('static', filename='img/feedback/sandra.png') }}" alt="sandra">
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <div class="icon-slide">
-                                    <i class="bi bi-arrow-left"></i>
-                                    <i class="bi bi-arrow-right"></i>
-                                </div>
-                                <div class="slider-text">
-                                    <h4>Testimonial 04</h4>
-                                    <p>out of <span>04</span> testimonials</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <div class="carousel-inner" id="review-list"></div>
             </div>
         </div>
     </section>
     <!-- Testimonial End -->
+
+    <!-- Gallery Section Begin -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="section-title">05 • Gallery</span>
+                    <h2 class="section-sub-title mt-2 mb-4">Our Fresh Fruits</h2>
+                </div>
+            </div>
+            <div class="image-gallery mt-5" id="image-gallery" style="overflow: hidden;"></div>
+        </div>
+    </section>
+    <!-- Gallery End -->
 
     <!-- FAQ Section Begin -->
     <section id="faq" class="faq">
@@ -353,90 +229,7 @@
                         Not answered yet ? email us on <span class="fw-bold">muhammad.himawan73@gmail.com</span></p>
                 </div>
             </div>
-            <article class="faq-list mt-4">
-                <div class="faq-item mb-3">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                        aria-expanded="false" aria-controls="collapseExample1">
-                        <i class="fa-solid fa-leaf"></i>How Fruity can help my business?<i
-                            class="bi bi-chevron-down fw-bold"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample1">
-                        <div class="text-accordion">
-                            Everyone is interested in getting fresh and quality fruits. Fruity is the powerful utility 
-                            that offers the fastest way to identify fresh or rotten fruit in seconds. The system will 
-                            work to classify your fruits by just waiting one second.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item mb-3">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample2">
-                        <i class="fa-solid fa-leaf"></i>What are the advantages of fruity service?<i
-                            class="bi bi-chevron-down fw-bold"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample2">
-                        <div class="text-accordion">
-                            For farmers, sellers and fruit processing industries can increase high productivity at low 
-                            cost because the process of classifying fresh and rotten fruit doesn't have to be done manually. 
-                            For fruit consumers (housewives, students, etc.), fruit as a fruit utility tool can help in 
-                            obtaining fresh and safe fruit for consumption so that it is good for health.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item mb-3">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample3" role="button"
-                        aria-expanded="false" aria-controls="collapseExample3">
-                        <i class="fa-solid fa-leaf"></i>How to use fruity service?<i
-                            class="bi bi-chevron-down fw-bold"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample3">
-                        <div class="text-accordion">
-                            To identify fresh or rotten fruit, you simply need to upload an image in our built-in tool, 
-                            and the app will tell you what it is in seconds!
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item mb-3">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample4" role="button"
-                        aria-expanded="false" aria-controls="collapseExample4">
-                        <i class="fa-solid fa-leaf"></i>What fruits can be identified by Fruity?<i
-                            class="bi bi-chevron-down fw-bold"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample4">
-                        <div class="text-accordion">
-                            Our application is still limited to quality identification in apples, bananas, grapes, 
-                            guavas, jujubes, oranges, pomegranates and strawberries. We will continue to strive to 
-                            develop this application to function by accepting more types of fruit in the future.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item mb-3">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample5" role="button"
-                        aria-expanded="false" aria-controls="collapseExample5">
-                        <i class="fa-solid fa-leaf"></i>What images are allowed to be uploaded?<i
-                            class="bi bi-chevron-down fw-bold"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample5">
-                        <div class="text-accordion">
-                            The application can only accept input in the form of images with file 
-                            extensions .JPG, .JPEG and .PNG only.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item mb-3">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample6" role="button"
-                        aria-expanded="false" aria-controls="collapseExample6">
-                        <i class="fa-solid fa-leaf"></i>One of the identifications is not accurate, what should I do?<i
-                            class="bi bi-chevron-down fw-bold"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample6">
-                        <div class="text-accordion">
-                            Since the app relies on images to identify, changing the angle or distance a bit can help 
-                            and making sure the image is focused on the object you want to identify will most likely help.
-                        </div>
-                    </div>
-                </div>
-            </article>
+            <article class="faq-list mt-4" id="faq-list"></article>
         </div>
     </section>
     <!-- FAQ Section End -->
@@ -445,4 +238,10 @@
 
 {% block footer %}
 {% include 'includes/footer-index.html' %}
-{% endblock %}   
+{% endblock %}
+
+<!-- scripts JS -->
+{% block javascripts %}
+<script type="module" src="{{ url_for('static', filename='js/script-index.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+{% endblock %}

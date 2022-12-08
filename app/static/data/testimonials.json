@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Ismira Shafa Salsabilla",
+        "alternateText": "Shafa",
+        "signature": "Brawijaya University Student’s",
+        "headlines": "Saves 3x faster time for sorting fresh fruit after using Fruity",
+        "review": "Ever since i work with Fruity, the fresh fruit sorting goes very quickly, so I can save a lot of time doing other work.",
+        "image": "static/img/feedback/ismira.png"
+    },
+    {
+        "id": "2",
+        "name": "Mayrieta Maharani Jazza",
+        "alternateText": "Amay",
+        "signature": "Gadjah Mada University Student’s",
+        "headlines": "The best app I've ever used. Easy to use and very helpful",
+        "review": "Identifying from Fruity helped me because I could easily find the condition of the fruit I bought from the fruit seller.",
+        "image": "static/img/feedback/amay.png"
+    },
+    {
+        "id": "3",
+        "name": "Octavia Allita Rosya",
+        "alternateText": "Lita",
+        "signature": "University of Indonesia Student’s",
+        "headlines": "Fruity has proven to be very effective in increasing productivity",
+        "review": "As a farmer, my father finds it helpful to have the Fruity app. Easy to use and can increase productivity in sorting fruit.",
+        "image": "static/img/feedback/alita.png"
+    },
+    {
+        "id": "4",
+        "name": "Sandra Lia Dwi Monica",
+        "alternateText": "Sandra",
+        "signature": "State Polytechnic of Malang Student’s",
+        "headlines": "Attractive interface web offers beneficial features to get fresh fruits",
+        "review": "I love everything about this app, the user interface is beautiful, and the features are impressive, making it easier for me to choose fresh fruits for daily consumption.",
+        "image": "static/img/feedback/sandra.png"
+    }
+]

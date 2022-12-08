@@ -234,7 +234,7 @@ You don't have to use both. Just choose either Fly.io or Railway.
 <br>
 
 <p align='center'>
-  <img align='center' src='https://railway.app/brand/logotype-light.svg' width='350'/>
+  <img align='center' src='readme-assets/railway.png' width='200' style="border-radius: 25px"/>
 </p>
 </summary>
 

@@ -1,0 +1,54 @@
+[
+    {
+        "image": "static/img/gallery/blueberry.jpg",
+        "class": "img-1"
+    },
+    {
+        "image": "static/img/gallery/orange.jpg",
+        "class": "img-2"
+    },
+    {
+        "image": "static/img/gallery/apples.jpg",
+        "class": "img-3"
+    },
+    {
+        "image": "static/img/gallery/strawberry.jpg",
+        "class": "img-4"
+    },
+    {
+        "image": "static/img/gallery/mango.jpg",
+        "class": "img-5"
+    },
+    {
+        "image": "static/img/gallery/oranges.jpg",
+        "class": "img-6"
+    },
+    {
+        "image": "static/img/gallery/pepper.jpg",
+        "class": "img-7"
+    },
+    {
+        "image": "static/img/gallery/tomato.jpg",
+        "class": "img-8"
+    },
+    {
+        "image": "static/img/gallery/tomatoes.jpg",
+        "class": "img-9"
+    },
+    {
+        "image": "static/img/gallery/grape.jpg",
+        "class": "img-10"
+    },
+    {
+        "image": "static/img/gallery/strawberrys.jpg",
+        "class": "img-11"
+    },
+    {
+        "image": "static/img/gallery/watermelon.jpg",
+        "class": "img-12"
+    },
+    {
+        "image": "static/img/gallery/quincy.jpg",
+        "class": "img-13"
+    }
+]
