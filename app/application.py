@@ -6,7 +6,7 @@ from keras.models import load_model
 from app import app
 
 # Load fresh rotten model
-fresh_rotten_model = load_model('app/models/model_dir/model_best_fruity.hdf5')
+fresh_rotten_model = load_model('app/models/model_dir/model.h5')
 
 # Read label dictionary
 def fresh_rotten_label(result):
