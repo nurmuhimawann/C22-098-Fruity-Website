@@ -1,0 +1,5 @@
+This dataset contains six types of fruit classes: fresh apples, 
+rotten apples, fresh bananas, rotten bananas, fresh oranges, and rotten oranges.
+
+This dataset was published by Sriram Reddy Kalluri and 
+is freely available at https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification.

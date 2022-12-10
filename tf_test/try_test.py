@@ -7,7 +7,7 @@ from PIL import Image
 
 # Function to load model
 def load_model():
-    model = tf.keras.models.load_model('model_dir/model_best_fruity.hdf5')
+    model = tf.keras.models.load_model('model_dir/model.h5')
     return model
 
 # Function to predict image
