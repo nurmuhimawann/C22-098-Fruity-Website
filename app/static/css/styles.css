@@ -336,6 +336,7 @@ body {
     width: 40px;
     height: 40px;
 }
+
 /* End wrapper About Us */
 
 .about-us>.container-fluid>.row>.text-about {
@@ -1067,6 +1068,65 @@ body {
 .img-13 {
     grid-area: img-13;
     background-image: url(../img/gallery/quincy.jpg);
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+    .image-gallery {
+        grid-template-areas:
+            'img-1 img-1 img-3 img-3'
+            'img-2 img-2 img-3 img-3'
+            'img-5 img-5 img-6 img-6'
+            'img-8 img-8 img-4 img-4'
+            'img-8 img-8 img-7 img-7'
+            'img-9 img-10 img-10 img-10'
+            'img-11 img-11 img-11 img-12'
+            'img-13 img-13 img-13 img-13';
+    }
+
+    .image-gallery a {
+        height: 200px;
+    }
+
+    .img-3,
+    .img-8 {
+        min-height: 415px;
+    }
+
+    .img-4,
+    .img-11 {
+        min-height: 0; 
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .image-gallery {
+        grid-template-areas:
+            'img-1 img-1 img-1 img-1'
+            'img-2 img-2 img-2 img-2'
+            'img-3 img-3 img-3 img-3'
+            'img-4 img-4 img-4 img-4'
+            'img-5 img-5 img-5 img-5'
+            'img-6 img-6 img-6 img-6'
+            'img-7 img-7 img-7 img-7'
+            'img-8 img-8 img-8 img-8'
+            'img-9 img-9 img-9 img-9'
+            'img-10 img-10 img-10 img-10'
+            'img-11 img-11 img-11 img-11'
+            'img-12 img-12 img-12 img-12'
+            'img-13 img-13 img-13 img-13';
+    }
+
+    .image-gallery a {
+        height: 200px;
+    }
+
+    .img-1,
+    .img-7,
+    .img-6,
+    .img-9 {
+        min-height: 0;
+    }
 }
 
 
