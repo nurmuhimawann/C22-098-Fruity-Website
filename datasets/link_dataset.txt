@@ -1,8 +1,0 @@
-Gdrive dataset: https://drive.google.com/drive/folders/1JlQCJ2ZJosZu9cWl3ESBzjbEJzjZ3Yi8?usp=sharing
-
-Sumber:
-- Lemon Quality Dataset
-https://www.kaggle.com/datasets/yusufemir/lemon-quality-dataset
-
-- Fruits fresh and rotten for classification
-https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification

@@ -17,7 +17,7 @@
     {
         "id": "4",
         "question": "What fruits can be identified by Fruity?",
-        "answer": "Our application is still limited to quality identification in apples, bananas, grapes, guavas, jujubes, oranges, pomegranates and strawberries. We will continue to strive to develop this application to function by accepting more types of fruit in the future."
+        "answer": "Our application is still limited to quality identification in apples, bananas and oranges. We will continue to strive to develop this application to function by accepting more types of fruit in the future."
     },
     {
         "id": "5",

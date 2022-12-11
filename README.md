@@ -51,11 +51,10 @@
 7. [Project Management Plan](#6)
 8. [Project Repository Structure](#7)
 9. [Project Resources](#8)
-10. [FAQs](#9)
-11. [Academic Paper & References](#10)
-12. [Support](#11)
-13. [Contributing](#12)
-14. [Acknowledgments](#13)
+10. [Academic Paper & References](#9)
+11. [Support](#10)
+12. [Contributing](#11)
+13. [Acknowledgments](#12)
 
 <br>
 
@@ -90,11 +89,16 @@ This website aims to help everyone (especially fruit growers and fruit sellers) 
 
 This section will explain the steps for installing and deploying Fruity to a web service with a short code. This process is divided into 3 parts, the first one introduction and prerequisites, the second is creating the Flask project itself, and the last is the hosting process on the platform as a service. Fyi, initially, we used Heroku. Sadly, since today (starting **November 28, 2022**), Heroku has eliminated all free services. We are using other alternative platforms, one of which is **Fly.io** and **Railway**. In the project, we use Railway. But, Railway has drawbacks, access is limited to 500 hours of use. Therefore, we're looking into how to set up Fly.io as a backup host.
 
+<br>
+
 <a id="4a"></a>
+
 
 ## 📦 Built Using
 
 Fruity is a web-based machine learning program developed by training models using the end-to-end machine learning platform, **TensorFlow**. And then, the trained model is connected to the web server using **Flask**.
+
+<br>
 
 <a id="4b"></a>
 
@@ -105,6 +109,8 @@ Fruity is a web-based machine learning program developed by training models usin
 - [**Flask v.2.2.2**](https://pypi.org/project/Flask/), Flask is a web application framework written in **Python**.
 
 <a id="4c"></a>
+
+<br>
 
 ## ⚙️ Installation & Get Started Project
 
@@ -293,8 +299,6 @@ This is the easiest way to deploy a web application to a railway because you don
 
 [Project Brief Document](#)
 
-[Project Charter](#)
-
 <br>
 
 
@@ -444,13 +448,6 @@ This repository is divided into a **main** and **two development branches** as f
 
 <a id="9"></a>
 
-# ❓ FAQs
-
-<br>
-
-
-<a id="10"></a>
-
 # 📖 Academic Paper & References
 
 - A. Kumar, R. C. Joshi, M. K. Dutta, M. Jonak and R. Burget, "Fruit-CNN: An Efficient Deep learning-based Fruit Classification and Quality Assessment for Precision Agriculture," 2021 13th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT), 2021, pp. 60-65, doi: 10.1109/ICUMT54235.2021.9631643.
@@ -465,7 +462,7 @@ This repository is divided into a **main** and **two development branches** as f
 <br>
 
 
-<a id="11"></a>
+<a id="10"></a>
 
 # 💖 Like this project ?
 
@@ -476,7 +473,7 @@ Leave a ⭐ If you think this project is cool.
 <br>
 
 
-<a id="12"></a>
+<a id="11"></a>
 
 # 👥 Contributing
 
@@ -510,7 +507,7 @@ Thank you for being such an amazing advisor!  You are so understanding, kind and
 <br>
 
 
-<a id="13"></a>
+<a id="12"></a>
 
 # 🎉 Acknowledgements
 
