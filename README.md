@@ -374,10 +374,6 @@ This repository is divided into a **main** and **two development branches** as f
 
 ## Datasets:
 
-- **Lemon Quality Datasets:**
-
-  https://www.kaggle.com/datasets/yusufemir/lemon-quality-dataset/
-
 - **Fruits Fresh & Rotten for Classifications:**
 
   https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification/
