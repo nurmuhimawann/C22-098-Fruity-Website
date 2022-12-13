@@ -123,7 +123,7 @@ To be able to push it into a stand-alone virtual environment, follow this step. 
 1. Clone this repository
 
     ```bash
-    $git clone https://github.com/nurmuhimawann/C22-098-Fruity-Website.git
+    $ git clone https://github.com/nurmuhimawann/C22-098-Fruity-Website.git
     ```
 
 2. Install Python Virtual Environment
@@ -131,21 +131,21 @@ To be able to push it into a stand-alone virtual environment, follow this step. 
     This project was developed using **Python v.3.9.13**. You should ensure that you are using version **3.9.13** to avoid dependencies on `requirements.txt` incompatible with older or newer versions of Python.
 
     ```bash
-    $virtualenv venv
+    $ virtualenv venv
     ```
 
 3. Install All the Requirements Inside "requirements.txt"
 
     ```bash
-    $pip install -r requirements.txt
+    $ pip install -r requirements.txt
     ```
 
 4. Create Flask App Environment Variables & Run Server
 
     ```bash
-    $env:FLASK_APP = "wsgi"
+    $ env:FLASK_APP = "wsgi"
 
-    $flask run
+    $ flask run
     ```
 
 5. Open URL referencing LocalHost in your browser
@@ -180,7 +180,7 @@ You don't have to use both. Just choose either Fly.io or Railway.
     On OS windows, Run the Powershell install script.
 
     ```bash
-    $iwr https://fly.io/install.ps1 -useb | iex
+    $ iwr https://fly.io/install.ps1 -useb | iex
     ```
 
 2. Login Fly.io
@@ -188,13 +188,13 @@ You don't have to use both. Just choose either Fly.io or Railway.
     If it’s your first time using Fly.io, you’ll need to sign up for an account.
 
     ```bash
-    $flyctl auth signup
+    $ flyctl auth signup
     ```
 
     If you already have a Fly.io account, all you need to do is sign in with flyctl. Simply run:
 
     ```bash
-    $flyctl auth login
+    $ flyctl auth login
     ```
 
 3. Configure the App for Fly
@@ -202,13 +202,13 @@ You don't have to use both. Just choose either Fly.io or Railway.
     Each Fly application needs a `fly.toml` file to tell the system how we'd like to deploy it. That file can be automatically generated.
 
     ```bash
-    $flyctl launch
+    $ flyctl launch
     ```
 
 4. Deploying to Fly
 
     ```bash
-    $flyctl deploy
+    $ flyctl deploy
     ```
 
 5. Viewing the Deployed App
@@ -216,7 +216,7 @@ You don't have to use both. Just choose either Fly.io or Railway.
     You can see, the application has been assigned with a DNS hostname.
 
     ```bash
-    $flyctl status
+    $ flyctl status
     ```
 
 6. Connecting to the App
@@ -224,7 +224,7 @@ You don't have to use both. Just choose either Fly.io or Railway.
     This will open a browser on the HTTP version of the site.
 
     ```bash
-    $flyctl open 
+    $ flyctl open 
     ```
 
     And that’s it! This is everything, now your web application accessible on the internet. Congrats 🎉
@@ -297,7 +297,11 @@ This is the easiest way to deploy a web application to a railway because you don
 
 # 📑 Project Management Plan
 
-[Project Brief Document](#)
+- [Capstone Project Management Documents](https://unej.id/DokumenManajemenCapstoneProyekDicoding2022)
+
+- [Project Brief Document](#)
+
+- [Minutes of Meetings with Adviser](https://unej.id/MOMSarahSalsabila)
 
 <br>
 
@@ -316,9 +320,9 @@ This is the easiest way to deploy a web application to a railway because you don
 │   │   ├── image_dir           # test image files
 │   │   ├── label_dir           # json label dictionary
 │   │   └── model_dir           # models hdf5
-│   ├── notebooks/              # Python Notebooks
 │   ├── static/                 # the place where JS,Images and CSS files are saved
 │   │   ├── css                 # CSS files
+│   │   ├── data                 # JSON files
 │   │   ├── fonts               # Fonts files
 │   │   ├── img                 # Image files
 │   │   ├── js                  # Javascripts files
@@ -326,8 +330,10 @@ This is the easiest way to deploy a web application to a railway because you don
 │   ├── templates/              # the place pages & components files are saved
 │   │   ├── includes            # Page chunks, components
 │   │   └── layouts             # App Layouts (the master pages)
-│   └── app.py                  # Bundle all above sections, routing and expose the Flask APP 
+│   └── __init__.py             # the place where flask app are initialized
+│   └── application.py          # Bundle all above sections, routing and expose the Flask APP 
 ├── datasets                    # links datasets
+├── notebooks                   # baseline models .ipynb
 ├── readme-assets               # Contains thumbs used in documentation (README.md)
 ├── .gitignore                  # Specifies file intentionally untracked files
 ├── Procfile                    # List of process types in an app
@@ -451,8 +457,13 @@ This repository is divided into a **main** and **two development branches** as f
 - Cortez, Atreyu Jasper Laxa.(2021)."Deploying Machine Learning Models Into A Website Using Flask". Accessed from https://towardsdatascience.com/deploying-machine-learning-models-into-a-website-using-flask-8582b7ce8802 on October, 23 2022 at 18.00 WIB.
   
 - Kemenko Perekonomian. (2021)."Pengembangan Hortikultura Berorientasi Ekspor Tingkatkan Produktivitas, Kualitas, dan Kontinuitas Produk Hortikultura". Accessed from https://www.ekon.go.id/publikasi/detail/3358/pengembangan-hortikultura-berorientasi-ekspor-tingkatkan-produktivitas-kualitas-dan-kontinuitas-produk-hortikultura on October, 23 2022 at 18.00 WIB.
-  
+
+- Maulana, Febian Fitra dan Rochmawati, Naim,” Klasifikasi Citra Buah Menggunakan Convolutional Neural Network,” Journal of Informatics and Computer Science, vol. 01, no. 02 pp. 2686-2220 2019, doi: 10.26740/jinacs.v1n02.p104-108.
+
 - Naik, Sapan & Patel, Bankim. (2017). Machine Vision based Fruit Classification and Grading - A Review. International Journal of Computer Applications. 170. 22-34. 10.5120/ijca2017914937.
+
+- Sena, Samuel. (2017)." Pengenalan Deep Learning Part 7: Convolutional Neural Network (CNN)". Accessed from
+https://medium.com/@samuelsena/pengenalan-deep-learning-part-7-convolutional-neural-network-cnn-b003b477dc94 on October, 23 2022 at 18.00 WIB.
 
 
 <br>

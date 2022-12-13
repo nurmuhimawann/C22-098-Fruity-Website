@@ -3,6 +3,10 @@
 
 
 /* Body Section */
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--ff-poppins);
     overflow: auto;
@@ -992,14 +996,14 @@ body {
     top: 0;
     left: 0;
     border-radius: 15px;
-    background-color: rgba(27, 25, 25, 0.55);
-    backdrop-filter: blur(0.5rem);
-    opacity: .4;
-    transition: opacity 0.5s;
+    background-color: var(--black-5);
+    opacity: .2;
+    transition: .2s ease-in-out;
 }
 
 .image-gallery a:hover::before {
-    opacity: 0;
+    background-color: var(--white);
+    opacity: .1;
 }
 
 .img-1 {
