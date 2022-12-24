@@ -25,7 +25,9 @@
 
 # 🌐 Demo Link <a name = "demo"></a>
 
-### [**Click here to view Fruity website**](https://itsfruity.up.railway.app/)
+In this project, we initially used Railway as a hosting platform for our application. But Railways have limited access. **Alternatively**, you can visit **https://itsfruity.onrender.com/** if the service in https://itsfruity.up.railway.app/ is no longer available.
+
+### [**Click here to view Fruity website**](https://itsfruity.onrender.com/)
 
 <p align='center'>
     <a href="https://itsfruity.up.railway.app/">
@@ -340,6 +342,7 @@ This is the easiest way to deploy a web application to a railway because you don
 ├── README.md                   # Information about a repository
 ├── requirements.txt            # Application dependencies
 ├── runtime.txt                 # Specify the version of Python
+├── set-env.txt                 # Setting for enviroment python
 └── wsgi.py                     # Start the app in development and production
 
 ```

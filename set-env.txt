@@ -1,0 +1,4 @@
+NIXPACKS_PYTHON_VERSION = 3.9.13
+PORT = 5825
+DOMAIN1 = https://itsfruity.up.railway.app/
+DOMAIN2 = https://itsfruity.onrender.com/
