@@ -106,9 +106,9 @@ Fruity is a web-based machine learning program developed by training models usin
 
 ## 🎨 Prerequisite
 
-- [**Python v.3.9.13**](https://www.python.org/downloads/release/python-3913/), one of the top machine learning and AI programming languages.
-- [**Tensorflow-CPU v.2.9.0**](https://www.tensorflow.org/install/pip), The core open-source library to help you develop and train ML models. in this package there is **Keras**. Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow.
-- [**Flask v.2.2.2**](https://pypi.org/project/Flask/), Flask is a web application framework written in **Python**.
+- [**Python**](https://www.python.org/), one of the top machine learning and AI programming languages.
+- [**Tensorflow**](https://www.tensorflow.org/install/pip), The core open-source library to help you develop and train ML models. in this package there is **Keras**. Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow.
+- [**Flask**](https://pypi.org/project/Flask/), Flask is a web application framework written in **Python**.
 
 <a id="4c"></a>
 
@@ -129,8 +129,6 @@ To be able to push it into a stand-alone virtual environment, follow this step. 
     ```
 
 2. Install Python Virtual Environment
-
-    This project was developed using **Python v.3.9.13**. You should ensure that you are using version **3.9.13** to avoid dependencies on `requirements.txt` incompatible with older or newer versions of Python.
 
     ```bash
     $ virtualenv venv
